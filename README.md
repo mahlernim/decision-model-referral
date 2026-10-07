@@ -46,4 +46,4 @@ Jev main-collection answers and the reference-model answers are provided as per-
 
 ## Data sources
 
-Questions come from KorMedMCQA (sean0042/KorMedMCQA, revision 79efd6f) and MedQA (GBaker/MedQA-USMLE-4-options-hf, revision 17af935), and physician ratings from google-health/med-gemini-medqa-relabelling. Request records reproduce question text and remain subject to the terms of those datasets.
+Questions come from KorMedMCQA (sean0042/KorMedMCQA, revision 79efd6f, CC BY-NC 2.0) and MedQA (GBaker/MedQA-USMLE-4-options-hf, revision 17af935, MIT licence), and physician ratings from google-health/med-gemini-medqa-relabelling. Question text in this repository remains under those original licences.

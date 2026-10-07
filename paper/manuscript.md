@@ -187,7 +187,7 @@ Decision models return option probabilities that can be used directly to decide 
 
 **Competing interests** The author declares no competing interests. Jev, OpenAI Decisions and Clef were used through standard accounts on the same terms as other users. TypeSafe AI, OpenAI and Cloudflare had no role in study design, data collection, analysis, interpretation or writing.
 
-**Data and code availability** Code, protocols, model outputs and analysis summaries are available at https://github.com/mahlernim/jev-korean-benchmark. Examination question text is not redistributed. It is available from the public KorMedMCQA (CC BY-NC 2.0) and MedQA (MIT licence) releases at the revisions recorded in the repository. The physician ratings of MedQA are available from their original release [16] at https://github.com/google-health/med-gemini-medqa-relabelling.
+**Data and code availability** Code, protocols, model outputs and analysis summaries are available at https://github.com/mahlernim/decision-model-referral. Examination questions in the repository come from the public KorMedMCQA (CC BY-NC 2.0) and MedQA (MIT licence) releases at the recorded revisions and remain under their original licences. The physician ratings of MedQA are available from their original release [16] at https://github.com/google-health/med-gemini-medqa-relabelling.
 
 **Use of AI tools** OpenAI Codex and Anthropic Claude Code assisted with analysis code. Korean content labels and draft characterizations of selected errors were produced with GPT-6.1 Sol. The author reviewed all code, outputs and text and takes full responsibility for the content.
 
