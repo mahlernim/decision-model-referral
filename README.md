@@ -47,3 +47,7 @@ Jev main-collection answers and the reference-model answers are provided as per-
 ## Data sources
 
 Questions come from KorMedMCQA (sean0042/KorMedMCQA, revision 79efd6f, CC BY-NC 2.0) and MedQA (GBaker/MedQA-USMLE-4-options-hf, revision 17af935, MIT licence), and physician ratings from google-health/med-gemini-medqa-relabelling. Question text in this repository remains under those original licences.
+
+## Licence
+
+The code is released under the MIT licence (see `LICENSE`). Examination questions keep their original licences, CC BY-NC 2.0 for KorMedMCQA and MIT for MedQA, so material containing KorMedMCQA questions may not be used commercially. Physician ratings remain under the terms of their original release.
