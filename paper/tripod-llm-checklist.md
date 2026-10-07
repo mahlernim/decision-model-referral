@@ -58,7 +58,7 @@ Locations: **MS** is the main manuscript and **S** the supplementary material. N
 | 9b | Data used to develop prompts | Yes | MS Methods (one fixed instruction, no prompt tuning). S Supplementary methods, Datasets (development questions used only for pilot and request checks) |
 | 10 | Summarization preprocessing | NA | Summarization tasks only |
 | 11 | Instruction tuning or alignment | NA | M and D only |
-| 12 | Compute | Yes | MS Tables 1 to 3 and Figure 2 (estimated cost per 1000 questions). Latency was recorded but not reported. Hardware is not applicable to hosted APIs |
+| 12 | Compute | Yes | MS Tables 1 to 3 and Figure 3 (estimated cost per 1000 questions). Latency was recorded but not reported. Hardware is not applicable to hosted APIs |
 | 13 | Ethical approval | Yes | MS Declarations (no human participants or patient data, IRB review not required) |
 | 14a | Funding and funder role | Yes | MS Declarations (NRF, MSIT, RS-2025-02214129, no funder role) |
 | 14b | Conflicts of interest | Yes | MS Declarations |
@@ -71,7 +71,7 @@ Locations: **MS** is the main manuscript and **S** the supplementary material. N
 | 16b | Characteristics by source | Yes | MS Methods and S Supplementary methods, Datasets (cohort sizes, option counts, examination years) |
 | 16c | Development vs evaluation distribution | Partly | Development and test sizes reported (S Supplementary methods, Datasets). Clinical variables are not applicable, and subject mix was not compared |
 | 16d | Numbers per analysis phase | Yes | MS Results and Tables 1 to 4 (denominators stated for every analysis) |
-| 17 | Performance | Yes | MS Results, Tables 1 to 4, Figures 1 to 3. S Tables 2 to 9 |
+| 17 | Performance | Yes | MS Methods, Figure 1. MS Results, Tables 1 to 4, Figures 2 to 4. S Tables 2 to 9 |
 | 18 | Model updating | NA | No updating. Model versions were fixed and checked on every response |
 | 19a | Interpretation and fairness | Yes | MS Discussion, including comparison with prior work [6,13,14,15,16,17,25,26,27]. Fairness across patient groups is not applicable because no patient data were used. Differences by content area (Korean law and policy) are reported in MS Results and S Table 8 |
 | 19b | Limitations | Yes | MS Discussion, limitations paragraph (analyses defined after earlier results, examination questions as a proxy with possible training exposure and historical keys, commercial services with undisclosed implementations and list-price costs, simulated referral) |

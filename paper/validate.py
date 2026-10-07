@@ -166,7 +166,7 @@ equal(len(st), 10)
 
 # Every table and figure is cited in the main text, numbered by first mention and placed after that mention.
 cited = re.sub(r'^\*\*(?:Supplementary )?(?:Table|Figure) \d+\..*$', '', body, flags=re.M)
-for kind, count in (('Table', 4), ('Figure', 3), ('Supplementary Table', 10)):
+for kind, count in (('Table', 4), ('Figure', 4), ('Supplementary Table', 10)):
     pattern = r'(?<!Supplementary )' + kind + r' (\d+)' if kind != 'Supplementary Table' else r'Supplementary Table (\d+)'
     first = []
     for m in re.finditer(pattern, cited):
@@ -300,7 +300,7 @@ for word in (r'\b[Ww]e\b', r'\b[Oo]ur\b', r'\bus\b'):
 # DOCX mirrors the Markdown tables and figures.
 doc = Document(HERE / 'medrxiv-manuscript.docx')
 equal([[[c.text for c in r.cells] for r in t.rows] for t in doc.tables], raw_mt + raw_st)
-equal(len(doc.inline_shapes), 3)
+equal(len(doc.inline_shapes), 4)
 print(json.dumps({'status': 'passed', 'checks': checks, 'main_tables': len(mt), 'supplementary_tables': len(st),
                   'references': len(refs),
                   'main_text_words_including_abstract': len(body.split())}, indent=2))

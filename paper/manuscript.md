@@ -34,7 +34,11 @@ Earlier evaluations of Jev covered automated judging with confidence-guided esca
 
 ### Study design and datasets
 
-This exploratory in silico study used public examination datasets, and all model requests were made between 17 September and 7 October 2026. The 20% referral share, the oracle comparison and the error analyses were defined after initial results were available. Reporting follows the TRIPOD-LLM guideline [22], and the completed checklist is provided as a supplementary file.
+This exploratory in silico study used public examination datasets, and all model requests were made between 17 September and 7 October 2026. The 20% referral share, the oracle comparison and the error analyses were defined after initial results were available. Figure 1 summarizes the design. Reporting follows the TRIPOD-LLM guideline [22], and the completed checklist is provided as a supplementary file.
+
+![Schematic of the study design showing option probabilities from a decision model, referral of the least confident answers, comparison with random and oracle referral, and option rotation](figures/figure-1-study-design.png)
+
+**Figure 1. Study design.** (A) A decision model returns a probability for each answer option, and the probability of the selected option serves as its confidence. The probability that a generative model assigns to its answer letter is exactly one for most answers. (B) Each model's least confident 20% of answers, those below the 20th percentile of its own confidence, were replaced with the answers of GPT-6.1 Sol, which stands in for a clinician or a stronger model. The remaining answers were accepted. (C) Confidence-based referral was compared with random referral and with an oracle that refers the same number of answers knowing which are wrong. (D) Options were rotated across the answer letters, and an unchanged request was repeated, to test whether answers and referral decisions changed. Squares represent answers ordered by confidence, and all values are illustrative.
 
 The Korean cohort comprised all 435 doctor test questions from the 2022 to 2024 KorMedMCQA examinations [17], each with five options. The English cohort comprised all 1,273 MedQA test questions [23], each with four options. Questions, options and historical answer keys were used as released, including a few English questions that refer to figures absent from the text. Inputs were text only, and the two cohorts were analyzed separately.
 
@@ -98,7 +102,7 @@ GPT-6 Luna letter probabilities had similar accuracy but were exactly one for 88
 
 ### Referring the least confident fifth
 
-The least confident 20% of answers held 56% to 91% of Korean and 62% to 72% of English errors (Table 3 and Figure 1). Referring them to GPT-6.1 Sol raised accuracy by 6.2 to 9.4 percentage points, more than random referral of the same number of answers for every model, and achieved 49% to 91% of the oracle's gain in Korean and 54% to 65% in English. The least confident half of answers held over 90% of each model's errors (Supplementary Table 5).
+The least confident 20% of answers held 56% to 91% of Korean and 62% to 72% of English errors (Table 3 and Figure 2). Referring them to GPT-6.1 Sol raised accuracy by 6.2 to 9.4 percentage points, more than random referral of the same number of answers for every model, and achieved 49% to 91% of the oracle's gain in Korean and 54% to 65% in English. The least confident half of answers held over 90% of each model's errors (Supplementary Table 5).
 
 **Table 3. Referral of each model's least confident 20% of answers to GPT-6.1 Sol.** Each model referred 87 Korean and 255 English answers. Errors caught is the share of the model's errors among the referred answers. Accuracy after referral replaces the referred answers with GPT-6.1 Sol answers and is compared with random referral and with an oracle that refers known errors first. Gain achieved is the improvement over random referral as a share of the oracle's improvement. GPT-6.1 Sol alone answered 98.6% of Korean and 96.8% of English questions correctly at US$0.906 and US$0.830 per 1,000 questions.
 
@@ -113,25 +117,25 @@ The least confident 20% of answers held 56% to 91% of Korean and 62% to 72% of E
 |  | Clef | 62.4 (56.7 to 69.3) | 93.0 (91.6 to 94.5) | 87.2 | 98.0 | 54 | 0.294 |
 |  | GPT-6 Luna letter probabilities | 68.0 (61.0 to 75.1) | 94.7 (93.4 to 95.8) | 90.2 | 97.5 | 61 | 0.234 |
 
-![Error-capture curves for Jev, OpenAI Decisions, Clef and GPT-6 Luna letter probabilities, with random and oracle references](figures/figure-1-error-capture.png)
+![Error-capture curves for Jev, OpenAI Decisions, Clef and GPT-6 Luna letter probabilities, with random and oracle references](figures/figure-2-error-capture.png)
 
-**Figure 1. Errors caught when each model refers its least confident answers.** Each panel ranks one model's valid answers from least to most confident and plots the share of its errors among the referred answers against the share of answers referred. (A) Korean questions. (B) English questions. The grey line is an oracle that refers errors first, the dashed line is random referral and open circles mark 20% referred. For GPT-6 Luna letter probabilities the curve becomes straight once only answers at probability 1 remain, because their order is then random.
+**Figure 2. Errors caught when each model refers its least confident answers.** Each panel ranks one model's valid answers from least to most confident and plots the share of its errors among the referred answers against the share of answers referred. (A) Korean questions. (B) English questions. The grey line is an oracle that refers errors first, the dashed line is random referral and open circles mark 20% referred. For GPT-6 Luna letter probabilities the curve becomes straight once only answers at probability 1 remain, because their order is then random.
 
-This referral cost about a quarter to a third as much as using GPT-6.1 Sol alone (Figure 2). GPT-6 Luna at maximum effort alone reached similar or higher accuracy at a similar cost (Table 2).
+This referral cost about a quarter to a third as much as using GPT-6.1 Sol alone (Figure 3). GPT-6 Luna at maximum effort alone reached similar or higher accuracy at a similar cost (Table 2).
 
-![Accuracy and cost when referring the least confident answers to GPT-6.1 Sol, with reference models](figures/figure-2-escalation.png)
+![Accuracy and cost when referring the least confident answers to GPT-6.1 Sol, with reference models](figures/figure-3-escalation.png)
 
-**Figure 2. Accuracy and cost of referring the least confident answers to GPT-6.1 Sol.** (A) Korean questions. (B) English questions. Each curve starts at a model alone (filled circle) and replaces its answers with GPT-6.1 Sol answers in order of increasing confidence until every valid answer is replaced. Open circles mark 20% referred, and grey diamonds are the reference models in Table 2. Claude Opus 5.5 and Claude Sonnet 5.5 cost more than US$1 per 1,000 questions and are shown as arrows at the right edge, labelled with their cost. Cost includes the model on every question and Sol on referred questions.
+**Figure 3. Accuracy and cost of referring the least confident answers to GPT-6.1 Sol.** (A) Korean questions. (B) English questions. Each curve starts at a model alone (filled circle) and replaces its answers with GPT-6.1 Sol answers in order of increasing confidence until every valid answer is replaced. Open circles mark 20% referred, and grey diamonds are the reference models in Table 2. Claude Opus 5.5 and Claude Sonnet 5.5 cost more than US$1 per 1,000 questions and are shown as arrows at the right edge, labelled with their cost. Cost includes the model on every question and Sol on referred questions.
 
-Letter probabilities performed comparably at this share, catching 77% of Korean and 68% of English errors, because the 11% to 14% of Luna answers below one held many errors. Beyond that point their ranking reduced to random choice among tied answers (Figure 1).
+Letter probabilities performed comparably at this share, catching 77% of Korean and 68% of English errors, because the 11% to 14% of Luna answers below one held many errors. Beyond that point their ranking reduced to random choice among tied answers (Figure 2).
 
 ### Stability of referral decisions
 
-OpenAI Decisions and Clef returned identical outputs on every identical repeat, whereas Jev's answer changed on about 2% of repeats. Rotating the options changed answers on 4.8% to 10.1% of rotations and referral decisions on 7.1% to 16.4% (Figure 3 and Supplementary Table 6). For referral decisions this exceeded identical repetition by 5.0 to 16.4 percentage points, with every 95% confidence interval above zero. Mean accuracy across rotations stayed within 1.5 percentage points of unchanged-order accuracy.
+OpenAI Decisions and Clef returned identical outputs on every identical repeat, whereas Jev's answer changed on about 2% of repeats. Rotating the options changed answers on 4.8% to 10.1% of rotations and referral decisions on 7.1% to 16.4% (Figure 4 and Supplementary Table 6). For referral decisions this exceeded identical repetition by 5.0 to 16.4 percentage points, with every 95% confidence interval above zero. Mean accuracy across rotations stayed within 1.5 percentage points of unchanged-order accuracy.
 
-![Answer and referral changes under rotation and identical repetition for the three decision models](figures/figure-3-option-order.png)
+![Answer and referral changes under rotation and identical repetition for the three decision models](figures/figure-4-option-order.png)
 
-**Figure 3. Changes in answers and referral decisions when the answer options were reordered.** Bars show the mean share of nonzero rotations (colored) or of one identical repeat (grey) in which the outcome differed from a contemporary unchanged-order request. (A, B) Selected answer in Korean and English questions. (C, D) Referral decision, at each model's threshold for its least confident 20% of answers, in Korean and English questions. Error bars are 95% bootstrap intervals. Identical repeats of OpenAI Decisions and Clef never changed.
+**Figure 4. Changes in answers and referral decisions when the answer options were reordered.** Bars show the mean share of nonzero rotations (colored) or of one identical repeat (grey) in which the outcome differed from a contemporary unchanged-order request. (A, B) Selected answer in Korean and English questions. (C, D) Referral decision, at each model's threshold for its least confident 20% of answers, in Korean and English questions. Error bars are 95% bootstrap intervals. Identical repeats of OpenAI Decisions and Clef never changed.
 
 ### Where errors remained
 
@@ -155,7 +159,7 @@ Physician-flagged questions formed 15% of the English cohort but held 32% to 42%
 
 ## Discussion
 
-The native probabilities of three decision models identified most of their errors on Korean and US licensing questions. Referring the least confident fifth of answers caught 56% to 91% of errors, and referral to a stronger model raised accuracy by 6 to 9 percentage points at a quarter to a third of that model's cost. Because the referral share is set from the models' own confidence, the approach can be put in place before any outcomes are labeled. Figures 1 and 2 show the same tradeoff at other workloads.
+The native probabilities of three decision models identified most of their errors on Korean and US licensing questions. Referring the least confident fifth of answers caught 56% to 91% of errors, and referral to a stronger model raised accuracy by 6 to 9 percentage points at a quarter to a third of that model's cost. Because the referral share is set from the models' own confidence, the approach can be put in place before any outcomes are labeled. Figures 2 and 3 show the same tradeoff at other workloads.
 
 The letter-probability comparison contrasts a decision model with the probabilities of its base generative model. OpenAI Decisions ranked errors clearly better than the answer-letter probabilities of GPT-6 Luna, which were nearly always exactly one. Letter probabilities nonetheless matched the decision models at a 20% referral share, because the few answers they scored below one contained many errors. Beyond those answers, about one in eight, they could not rank the rest. A decision model should therefore be compared with the strongest simple alternative at the same referral share [6], and a high AUROC should not be read as an accurate chance of clinical correctness [13].
 
