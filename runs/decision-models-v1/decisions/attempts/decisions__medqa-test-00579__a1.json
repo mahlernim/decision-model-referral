@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00579",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "e8633da52f3060c11db19f827e91b1ab4942a4a9ac36d4935d605ac36fde627b",
+  "started_at": "2026-10-07T02:27:06.689789+00:00",
+  "budget_charge_usd": 5.2e-05,
+  "http_status": 200,
+  "request_id": "req_129739a62b3848958a7f73a6c8ce66e5",
+  "latency_ms": 431.6872999770567,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.77
+          },
+          {
+            "value": "B",
+            "probability": 0.03
+          },
+          {
+            "value": "C",
+            "probability": 0.02
+          },
+          {
+            "value": "D",
+            "probability": 0.18
+          }
+        ],
+        "confidence": 0.69
+      }
+    ],
+    "usage": {
+      "input_tokens": 520,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 520
+    }
+  },
+  "usage": {
+    "input_tokens": 520,
+    "output_tokens": 0,
+    "standardized_usd": 5.2e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": false,
+    "probabilities": {
+      "A": 0.77,
+      "B": 0.03,
+      "C": 0.02,
+      "D": 0.18
+    },
+    "raw_probabilities": {
+      "A": 0.77,
+      "B": 0.03,
+      "C": 0.02,
+      "D": 0.18
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.77,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.69,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:07.123159+00:00"
+}

@@ -1,0 +1,252 @@
+{
+  "job": "luna__doctor-2022-2-71",
+  "attempt": 1,
+  "manifest_hash": "9af977f5a58aa36d0bd08afe5d9dfe12d1135e2dff328f5eab31fe24d44984f9",
+  "request_hash": "c9916c18a9f71a01d9008d9183ccd1f1882d9de21d2ad845f6e6d2f5fba17a65",
+  "started_at": "2026-10-06T12:11:04.418960+00:00",
+  "budget_charge_usd": 4.32e-05,
+  "http_status": 200,
+  "latency_ms": 1989.0743999858387,
+  "raw_response": {
+    "id": "resp_0b970db211f1d17a016ac4e55823f087d09930635c6fb84583",
+    "object": "response",
+    "created_at": 1791288664,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791288665,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 128,
+    "max_tool_calls": null,
+    "model": "gpt-6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0b970db211f1d17a016ac4e55985d087d0a446621bd973049d",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [
+              {
+                "bytes": [
+                  123,
+                  34
+                ],
+                "logprob": 1.5e-05,
+                "token": "{\"",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      123,
+                      34
+                    ],
+                    "logprob": 1.5e-05,
+                    "token": "{\""
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  97,
+                  110,
+                  115,
+                  119,
+                  101,
+                  114
+                ],
+                "logprob": 4e-06,
+                "token": "answer",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      97,
+                      110,
+                      115,
+                      119,
+                      101,
+                      114
+                    ],
+                    "logprob": 4e-06,
+                    "token": "answer"
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  34,
+                  58,
+                  34
+                ],
+                "logprob": 0.0,
+                "token": "\":\"",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      34,
+                      58,
+                      34
+                    ],
+                    "logprob": 0.0,
+                    "token": "\":\""
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  67
+                ],
+                "logprob": 0.0,
+                "token": "C",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      67
+                    ],
+                    "logprob": 0.0,
+                    "token": "C"
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  34,
+                  125
+                ],
+                "logprob": -1.5e-05,
+                "token": "\"}",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      34,
+                      125
+                    ],
+                    "logprob": -1.5e-05,
+                    "token": "\"}"
+                  }
+                ]
+              }
+            ],
+            "text": "{\"answer\":\"C\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "comparator",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D",
+                "E"
+              ]
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 20,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 367,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 13,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 380
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "usage": {
+    "input_tokens": 367,
+    "output_tokens": 13,
+    "cached_tokens": 0,
+    "billed_usd": 4.32e-05,
+    "standardized_usd": 4.32e-05
+  },
+  "resolved_model": "gpt-6-luna",
+  "value": {
+    "answer": "C",
+    "correct": true,
+    "probabilities": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 1.0,
+      "D": 0.0,
+      "E": 0.0
+    },
+    "valid_letter_mass": 1.0,
+    "selected_probability": 1.0,
+    "argmax_matches": true
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-06T12:11:06.410124+00:00"
+}

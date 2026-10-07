@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-01122",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "dea5ca3122668f533bc0e7ed2e78d5e59b02ed416a49520773b95d423cc8ab3a",
+  "started_at": "2026-10-07T02:24:55.261427+00:00",
+  "budget_charge_usd": 2.8e-05,
+  "http_status": 200,
+  "request_id": "req_fdeb80ee78bd455893aa849d5e5eb9e8",
+  "latency_ms": 491.4598999894224,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "B",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.16
+          },
+          {
+            "value": "B",
+            "probability": 0.61
+          },
+          {
+            "value": "C",
+            "probability": 0.11
+          },
+          {
+            "value": "D",
+            "probability": 0.12
+          }
+        ],
+        "confidence": 0.48
+      }
+    ],
+    "usage": {
+      "input_tokens": 280,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 280
+    }
+  },
+  "usage": {
+    "input_tokens": 280,
+    "output_tokens": 0,
+    "standardized_usd": 2.8e-05
+  },
+  "value": {
+    "answer": "B",
+    "correct": true,
+    "probabilities": {
+      "A": 0.16,
+      "B": 0.61,
+      "C": 0.11,
+      "D": 0.12
+    },
+    "raw_probabilities": {
+      "A": 0.16,
+      "B": 0.61,
+      "C": 0.11,
+      "D": 0.12
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.61,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.48,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:55.754519+00:00"
+}

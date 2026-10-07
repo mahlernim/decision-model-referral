@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00761",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "94645d70837825badb17f0d906e672e7cce0921fcf3fc008ebe7a34d0ef632a8",
+  "started_at": "2026-10-07T02:27:22.630090+00:00",
+  "budget_charge_usd": 4.53e-05,
+  "http_status": 200,
+  "request_id": "req_831c196ed247465ea7c9d230520ad549",
+  "latency_ms": 376.12160004209727,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.0
+          },
+          {
+            "value": "B",
+            "probability": 0.0
+          },
+          {
+            "value": "C",
+            "probability": 0.01
+          },
+          {
+            "value": "D",
+            "probability": 0.99
+          }
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "usage": {
+      "input_tokens": 453,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 453
+    }
+  },
+  "usage": {
+    "input_tokens": 453,
+    "output_tokens": 0,
+    "standardized_usd": 4.53e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.01,
+      "D": 0.99
+    },
+    "raw_probabilities": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.01,
+      "D": 0.99
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.99,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.99,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:23.008141+00:00"
+}

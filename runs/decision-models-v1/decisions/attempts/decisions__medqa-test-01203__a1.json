@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-01203",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "c20e45f46a071dfddbd15e25d2799873bb92e739c150a8224337ce824b475c26",
+  "started_at": "2026-10-07T02:28:03.967454+00:00",
+  "budget_charge_usd": 3.86e-05,
+  "http_status": 200,
+  "request_id": "req_9f659bbcb43a42968f2bb7a017a274d3",
+  "latency_ms": 489.3237999640405,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "C",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.0
+          },
+          {
+            "value": "B",
+            "probability": 0.0
+          },
+          {
+            "value": "C",
+            "probability": 0.99
+          },
+          {
+            "value": "D",
+            "probability": 0.01
+          }
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "usage": {
+      "input_tokens": 386,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 386
+    }
+  },
+  "usage": {
+    "input_tokens": 386,
+    "output_tokens": 0,
+    "standardized_usd": 3.86e-05
+  },
+  "value": {
+    "answer": "C",
+    "correct": true,
+    "probabilities": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.99,
+      "D": 0.01
+    },
+    "raw_probabilities": {
+      "A": 0.0,
+      "B": 0.0,
+      "C": 0.99,
+      "D": 0.01
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.99,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.99,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:28:04.458843+00:00"
+}

@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00968",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "56402a197b51b045593f018602f678300c11948138052c9d52ed247434b96bf5",
+  "started_at": "2026-10-07T02:27:40.843931+00:00",
+  "budget_charge_usd": 3.71e-05,
+  "http_status": 200,
+  "request_id": "req_f276a8d1cc2345ddabb51d8d51b6168d",
+  "latency_ms": 261.52729999739677,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 1.0
+          },
+          {
+            "value": "B",
+            "probability": 0.0
+          },
+          {
+            "value": "C",
+            "probability": 0.0
+          },
+          {
+            "value": "D",
+            "probability": 0.0
+          }
+        ],
+        "confidence": 1.0
+      }
+    ],
+    "usage": {
+      "input_tokens": 371,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 371
+    }
+  },
+  "usage": {
+    "input_tokens": 371,
+    "output_tokens": 0,
+    "standardized_usd": 3.71e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 1.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "raw_probabilities": {
+      "A": 1.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 1.0,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 1.0,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:41.107340+00:00"
+}

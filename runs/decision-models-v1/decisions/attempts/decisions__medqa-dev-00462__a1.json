@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00462",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "d41292b847721f7bc9a8104e639fe6b4d5891fba5399508c8a8e170949735b0e",
+  "started_at": "2026-10-07T02:23:57.688227+00:00",
+  "budget_charge_usd": 3.09e-05,
+  "http_status": 200,
+  "request_id": "req_f0c53cf59023412d9a81c7392b505fec",
+  "latency_ms": 414.08899996895343,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.97
+          },
+          {
+            "value": "B",
+            "probability": 0.01
+          },
+          {
+            "value": "C",
+            "probability": 0.01
+          },
+          {
+            "value": "D",
+            "probability": 0.01
+          }
+        ],
+        "confidence": 0.96
+      }
+    ],
+    "usage": {
+      "input_tokens": 309,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 309
+    }
+  },
+  "usage": {
+    "input_tokens": 309,
+    "output_tokens": 0,
+    "standardized_usd": 3.09e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.97,
+      "B": 0.01,
+      "C": 0.01,
+      "D": 0.01
+    },
+    "raw_probabilities": {
+      "A": 0.97,
+      "B": 0.01,
+      "C": 0.01,
+      "D": 0.01
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.97,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.96,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:23:58.104047+00:00"
+}

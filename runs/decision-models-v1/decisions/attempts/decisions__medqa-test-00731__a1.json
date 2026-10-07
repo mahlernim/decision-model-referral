@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00731",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "73826025386beaa1957b5081bc10a145f6b552b4e6b6591807b1abd5c44d5f60",
+  "started_at": "2026-10-07T02:27:20.032939+00:00",
+  "budget_charge_usd": 2.92e-05,
+  "http_status": 200,
+  "request_id": "req_7c91d4faf5a64034bb4677991bf06d1e",
+  "latency_ms": 401.6680999775417,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "B",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.01
+          },
+          {
+            "value": "B",
+            "probability": 0.97
+          },
+          {
+            "value": "C",
+            "probability": 0.01
+          },
+          {
+            "value": "D",
+            "probability": 0.01
+          }
+        ],
+        "confidence": 0.96
+      }
+    ],
+    "usage": {
+      "input_tokens": 292,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 292
+    }
+  },
+  "usage": {
+    "input_tokens": 292,
+    "output_tokens": 0,
+    "standardized_usd": 2.92e-05
+  },
+  "value": {
+    "answer": "B",
+    "correct": true,
+    "probabilities": {
+      "A": 0.01,
+      "B": 0.97,
+      "C": 0.01,
+      "D": 0.01
+    },
+    "raw_probabilities": {
+      "A": 0.01,
+      "B": 0.97,
+      "C": 0.01,
+      "D": 0.01
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.97,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.96,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:20.436144+00:00"
+}

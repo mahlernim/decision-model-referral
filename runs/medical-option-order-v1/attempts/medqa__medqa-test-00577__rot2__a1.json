@@ -1,0 +1,74 @@
+{
+  "eval_id": "medqa__medqa-test-00577__rot2",
+  "item_id": "medqa-test-00577",
+  "cohort": "medqa",
+  "variant": "rot2",
+  "request_hash": "1abef747d3b7a51533c51e0476dce4ad3e0e7fbfa8df8bdaf859551a9742e1ea",
+  "attempt": 1,
+  "manifest_hash": "95fa409667e3ae3367fe7f86a040408f754435cac59faf77b245878970056879",
+  "started_at": "2026-09-22T10:01:54.623416+00:00",
+  "budget_charge_usd": 3.874500000000001e-05,
+  "estimated_cost_usd": 3.0996000000000006e-05,
+  "input_tokens": 738,
+  "latency_ms": 523.0271999898832,
+  "wire_request_sha256": "2d02eef726989f39b516e535bb622e0abfee79619786dc2b5859d7c748d3eb44",
+  "wire_request_verified": true,
+  "response_body_sha256": "8bbee4592bb641d3bf307055e78040298c103f01283f607c3b8b449a14364f24",
+  "response_body_path": "runs/medical-option-order-v1/raw/medqa__medqa-test-00577__rot2__a1.json",
+  "raw_response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "answer": {
+        "type": "choice",
+        "choice": "D",
+        "confidence": 0.36,
+        "probabilities": {
+          "B": 0.06,
+          "A": 0.31,
+          "D": 0.52,
+          "C": 0.11
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 738,
+      "output_tokens": 45
+    }
+  },
+  "value": {
+    "prediction": "D",
+    "probabilities": {
+      "B": 0.06,
+      "A": 0.31,
+      "D": 0.52,
+      "C": 0.11
+    },
+    "rank_confidence": 0.36,
+    "reported_probability_sum": 1.0,
+    "probabilities_renormalized": false,
+    "raw_vector_brier": 0.3422,
+    "raw_gold_log_loss": 0.6539264674066639,
+    "correct": true,
+    "brier": 0.3422,
+    "log_loss": 0.6539264674066639,
+    "input_tokens": 738,
+    "estimated_cost_usd": 3.0996000000000006e-05,
+    "semantic_prediction": "B",
+    "semantic_probabilities": {
+      "D": 0.06,
+      "C": 0.31,
+      "B": 0.52,
+      "A": 0.11
+    },
+    "selected_probability": 0.52,
+    "raw_selected_probability": 0.52,
+    "reported_confidence": 0.36,
+    "referred": true,
+    "raw_referred": true,
+    "renormalized": false
+  },
+  "status": "success",
+  "terminal": true,
+  "fatal": false,
+  "finished_at": "2026-09-22T10:01:55.150189+00:00"
+}

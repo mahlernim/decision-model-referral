@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00154",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "8bcc96e6b1e1caa38e1ea1c7fbcadb0e28cd0d509254483bc42831a6d49bc0dd",
+  "started_at": "2026-10-07T02:23:29.402538+00:00",
+  "budget_charge_usd": 4.0400000000000006e-05,
+  "http_status": 200,
+  "request_id": "req_3c25f6cb447c499ba6a66b37d221eaef",
+  "latency_ms": 384.3359000165947,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 1.0
+          },
+          {
+            "value": "B",
+            "probability": 0.0
+          },
+          {
+            "value": "C",
+            "probability": 0.0
+          },
+          {
+            "value": "D",
+            "probability": 0.0
+          }
+        ],
+        "confidence": 1.0
+      }
+    ],
+    "usage": {
+      "input_tokens": 404,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 404
+    }
+  },
+  "usage": {
+    "input_tokens": 404,
+    "output_tokens": 0,
+    "standardized_usd": 4.0400000000000006e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 1.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "raw_probabilities": {
+      "A": 1.0,
+      "B": 0.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 1.0,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 1.0,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:23:29.789718+00:00"
+}

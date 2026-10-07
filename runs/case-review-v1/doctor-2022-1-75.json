@@ -1,0 +1,167 @@
+{
+  "item_id": "doctor-2022-1-75",
+  "selected_option": "A",
+  "official_key": "D",
+  "request_hash": "c190a12843b7644db66ba0edcbfc3993711705caf2604870066bcbb5b1a0f5da",
+  "requested_at": "2026-10-07T10:47:59.469914+00:00",
+  "resolved_model": "gpt-6.1-sol",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 421,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 93,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 514
+  },
+  "raw_response": {
+    "id": "resp_00398b15c508fee3016ac6235ab0a087d1917fc9b946d2e869",
+    "object": "response",
+    "created_at": 1791370074,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791370077,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "model": "gpt-6.1-sol",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_00398b15c508fee3016ac6235c258887d197d70e061809a770",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"category\":\"law_policy\",\"description\":\"The item appears to distinguish assessing health consequences of a major public development policy, keyed as healthy public policy, from creating supportive environments, the selected option. Environmental changes frame the scenario, but the key emphasizes policy-level assessment.\",\"evidence\":\"환경변화가 주민건강에 미치는 부정적 영향을 사전에 평가할 필요성\",\"key_concern\":false,\"certainty\":\"high\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "low",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "review",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": [
+                "clinical_distinction",
+                "numerical_lab",
+                "negative_wording",
+                "law_policy",
+                "possible_item_defect",
+                "indeterminate"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "key_concern": {
+              "type": "boolean"
+            },
+            "certainty": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "description",
+            "evidence",
+            "key_concern",
+            "certainty"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 421,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 93,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 514
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "value": {
+    "category": "law_policy",
+    "description": "The item appears to distinguish assessing health consequences of a major public development policy, keyed as healthy public policy, from creating supportive environments, the selected option. Environmental changes frame the scenario, but the key emphasizes policy-level assessment.",
+    "evidence": "환경변화가 주민건강에 미치는 부정적 영향을 사전에 평가할 필요성",
+    "key_concern": false,
+    "certainty": "high"
+  }
+}

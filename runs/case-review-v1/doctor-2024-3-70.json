@@ -1,0 +1,167 @@
+{
+  "item_id": "doctor-2024-3-70",
+  "selected_option": "C",
+  "official_key": "A",
+  "request_hash": "584c24ca8615bc226653a62ac401b071d440b6f7e9dc2eb7b13970bbf14c79b9",
+  "requested_at": "2026-10-07T10:48:04.145290+00:00",
+  "resolved_model": "gpt-6.1-sol",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 716,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 98,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 814
+  },
+  "raw_response": {
+    "id": "resp_0338c659ab8cebbb016ac6235f4f6887d1bcaafdb8bc64538a",
+    "object": "response",
+    "created_at": 1791370079,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791370082,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "model": "gpt-6.1-sol",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_0338c659ab8cebbb016ac62360747c87d1bff308652a592155",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"category\":\"clinical_distinction\",\"description\":\"The item appears to distinguish delirium, the keyed diagnosis, from functional neurological symptom disorder, the selected diagnosis, in an acute episode of impaired awareness and responsiveness with abnormal movements despite unrevealing neurological investigations.\",\"evidence\":\"눈 맞춤은 전혀 되지 않고, 질문에 대답하지 않고 멍하게 의미 없이 고개를 흔든다.\",\"key_concern\":false,\"certainty\":\"high\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "low",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "review",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": [
+                "clinical_distinction",
+                "numerical_lab",
+                "negative_wording",
+                "law_policy",
+                "possible_item_defect",
+                "indeterminate"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "key_concern": {
+              "type": "boolean"
+            },
+            "certainty": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "description",
+            "evidence",
+            "key_concern",
+            "certainty"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 716,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 98,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 814
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "value": {
+    "category": "clinical_distinction",
+    "description": "The item appears to distinguish delirium, the keyed diagnosis, from functional neurological symptom disorder, the selected diagnosis, in an acute episode of impaired awareness and responsiveness with abnormal movements despite unrevealing neurological investigations.",
+    "evidence": "눈 맞춤은 전혀 되지 않고, 질문에 대답하지 않고 멍하게 의미 없이 고개를 흔든다.",
+    "key_concern": false,
+    "certainty": "high"
+  }
+}

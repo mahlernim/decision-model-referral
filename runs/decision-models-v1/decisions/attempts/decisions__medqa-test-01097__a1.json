@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-01097",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "b2de3df169a61c5551ab15d601d4aebc7739dca50b1a3dab0c552865383c5726",
+  "started_at": "2026-10-07T02:27:53.096037+00:00",
+  "budget_charge_usd": 2.83e-05,
+  "http_status": 200,
+  "request_id": "req_3add8ac158954f5d8f8fc3ae1737e598",
+  "latency_ms": 378.89560003532097,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "C",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.01
+          },
+          {
+            "value": "B",
+            "probability": 0.08
+          },
+          {
+            "value": "C",
+            "probability": 0.91
+          },
+          {
+            "value": "D",
+            "probability": 0.0
+          }
+        ],
+        "confidence": 0.88
+      }
+    ],
+    "usage": {
+      "input_tokens": 283,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 283
+    }
+  },
+  "usage": {
+    "input_tokens": 283,
+    "output_tokens": 0,
+    "standardized_usd": 2.83e-05
+  },
+  "value": {
+    "answer": "C",
+    "correct": true,
+    "probabilities": {
+      "A": 0.01,
+      "B": 0.08,
+      "C": 0.91,
+      "D": 0.0
+    },
+    "raw_probabilities": {
+      "A": 0.01,
+      "B": 0.08,
+      "C": 0.91,
+      "D": 0.0
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.91,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.88,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:53.476500+00:00"
+}

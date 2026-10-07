@@ -1,0 +1,250 @@
+{
+  "job": "luna__medqa-dev-00259",
+  "attempt": 1,
+  "manifest_hash": "9af977f5a58aa36d0bd08afe5d9dfe12d1135e2dff328f5eab31fe24d44984f9",
+  "request_hash": "97eab563618b8e6e2dc732b7e9405b31b9b038d3c402110b190b083d288cf1eb",
+  "started_at": "2026-10-06T12:04:14.266645+00:00",
+  "budget_charge_usd": 3.1400000000000004e-05,
+  "http_status": 200,
+  "latency_ms": 1956.5921000321396,
+  "raw_response": {
+    "id": "resp_08dc6214bb1a501f016ac4e3bdfebc87d0b93d0c8deb918cc6",
+    "object": "response",
+    "created_at": 1791288254,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791288255,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 128,
+    "max_tool_calls": null,
+    "model": "gpt-6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_08dc6214bb1a501f016ac4e3bf750487d0b1ffbeaad5e23717",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [
+              {
+                "bytes": [
+                  123,
+                  34
+                ],
+                "logprob": 8e-06,
+                "token": "{\"",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      123,
+                      34
+                    ],
+                    "logprob": 8e-06,
+                    "token": "{\""
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  97,
+                  110,
+                  115,
+                  119,
+                  101,
+                  114
+                ],
+                "logprob": 0.0,
+                "token": "answer",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      97,
+                      110,
+                      115,
+                      119,
+                      101,
+                      114
+                    ],
+                    "logprob": 0.0,
+                    "token": "answer"
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  34,
+                  58,
+                  34
+                ],
+                "logprob": -8e-06,
+                "token": "\":\"",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      34,
+                      58,
+                      34
+                    ],
+                    "logprob": -8e-06,
+                    "token": "\":\""
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  66
+                ],
+                "logprob": -0.018532,
+                "token": "B",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      66
+                    ],
+                    "logprob": -0.018532,
+                    "token": "B"
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  34,
+                  125
+                ],
+                "logprob": 1.5e-05,
+                "token": "\"}",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      34,
+                      125
+                    ],
+                    "logprob": 1.5e-05,
+                    "token": "\"}"
+                  }
+                ]
+              }
+            ],
+            "text": "{\"answer\":\"B\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "comparator",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 20,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 249,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 13,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 262
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "usage": {
+    "input_tokens": 249,
+    "output_tokens": 13,
+    "cached_tokens": 0,
+    "billed_usd": 3.1400000000000004e-05,
+    "standardized_usd": 3.1400000000000004e-05
+  },
+  "resolved_model": "gpt-6-luna",
+  "value": {
+    "answer": "B",
+    "correct": true,
+    "probabilities": {
+      "A": 0.0,
+      "B": 1.0,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "valid_letter_mass": 0.9816386616520143,
+    "selected_probability": 1.0,
+    "argmax_matches": true
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-06T12:04:16.224927+00:00"
+}

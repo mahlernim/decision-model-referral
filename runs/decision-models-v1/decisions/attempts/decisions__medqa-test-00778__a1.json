@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00778",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "3355b5f727205eb31cba379eb2563563876e581ea717a9856e6ad9b222f0ae80",
+  "started_at": "2026-10-07T02:27:24.191604+00:00",
+  "budget_charge_usd": 3.01e-05,
+  "http_status": 200,
+  "request_id": "req_a09af47e38c74051897a1b001da4bb6c",
+  "latency_ms": 250.1748999929987,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.67
+          },
+          {
+            "value": "B",
+            "probability": 0.04
+          },
+          {
+            "value": "C",
+            "probability": 0.13
+          },
+          {
+            "value": "D",
+            "probability": 0.16
+          }
+        ],
+        "confidence": 0.56
+      }
+    ],
+    "usage": {
+      "input_tokens": 301,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 301
+    }
+  },
+  "usage": {
+    "input_tokens": 301,
+    "output_tokens": 0,
+    "standardized_usd": 3.01e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": false,
+    "probabilities": {
+      "A": 0.67,
+      "B": 0.04,
+      "C": 0.13,
+      "D": 0.16
+    },
+    "raw_probabilities": {
+      "A": 0.67,
+      "B": 0.04,
+      "C": 0.13,
+      "D": 0.16
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.67,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.56,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:24.443381+00:00"
+}

@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-01062",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "1f35506c313bda98bbc67f71cddfccd52cf4b7ac76e691cc65b56b3c9dcc9925",
+  "started_at": "2026-10-07T02:27:49.896297+00:00",
+  "budget_charge_usd": 3.13e-05,
+  "http_status": 200,
+  "request_id": "req_bcdc9bd5884d4a058faa7a9d3f913be8",
+  "latency_ms": 454.63669998571277,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.31
+          },
+          {
+            "value": "B",
+            "probability": 0.24
+          },
+          {
+            "value": "C",
+            "probability": 0.17
+          },
+          {
+            "value": "D",
+            "probability": 0.28
+          }
+        ],
+        "confidence": 0.08
+      }
+    ],
+    "usage": {
+      "input_tokens": 313,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 313
+    }
+  },
+  "usage": {
+    "input_tokens": 313,
+    "output_tokens": 0,
+    "standardized_usd": 3.13e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.31,
+      "B": 0.24,
+      "C": 0.17,
+      "D": 0.28
+    },
+    "raw_probabilities": {
+      "A": 0.31,
+      "B": 0.24,
+      "C": 0.17,
+      "D": 0.28
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.31,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.08,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:50.353246+00:00"
+}

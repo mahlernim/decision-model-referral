@@ -1,0 +1,74 @@
+{
+  "eval_id": "medqa__medqa-test-00793__rot3",
+  "item_id": "medqa-test-00793",
+  "cohort": "medqa",
+  "variant": "rot3",
+  "request_hash": "75a9d44c41b12c65a00acbe5d367a382f0eb36dbe8c69bcc48b9387030c56ec7",
+  "attempt": 1,
+  "manifest_hash": "95fa409667e3ae3367fe7f86a040408f754435cac59faf77b245878970056879",
+  "started_at": "2026-09-22T10:07:15.868321+00:00",
+  "budget_charge_usd": 2.7825000000000005e-05,
+  "estimated_cost_usd": 2.2260000000000004e-05,
+  "input_tokens": 530,
+  "latency_ms": 237.577699997928,
+  "wire_request_sha256": "5b8369b48457673b3cf40d00a12a96a4d631066b2fc5f7ef4484314846f4b1a8",
+  "wire_request_verified": true,
+  "response_body_sha256": "bd1b2259e8589f290f8fa999a2cd93cc149dd8a5bb33d090a6dfd88395ded32d",
+  "response_body_path": "runs/medical-option-order-v1/raw/medqa__medqa-test-00793__rot3__a1.json",
+  "raw_response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "answer": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.58,
+        "probabilities": {
+          "A": 0.68,
+          "C": 0.26,
+          "D": 0.02,
+          "B": 0.03
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 530,
+      "output_tokens": 45
+    }
+  },
+  "value": {
+    "prediction": "A",
+    "probabilities": {
+      "A": 0.6868686868686869,
+      "C": 0.2626262626262626,
+      "D": 0.0202020202020202,
+      "B": 0.0303030303030303
+    },
+    "rank_confidence": 0.58,
+    "reported_probability_sum": 0.9900000000000001,
+    "probabilities_renormalized": true,
+    "raw_vector_brier": 1.0113,
+    "raw_gold_log_loss": 1.3470736479666092,
+    "correct": false,
+    "brier": 1.0168350168350169,
+    "log_loss": 1.337023312113108,
+    "input_tokens": 530,
+    "estimated_cost_usd": 2.2260000000000004e-05,
+    "semantic_prediction": "D",
+    "semantic_probabilities": {
+      "D": 0.6868686868686869,
+      "B": 0.2626262626262626,
+      "C": 0.0202020202020202,
+      "A": 0.0303030303030303
+    },
+    "selected_probability": 0.6868686868686869,
+    "raw_selected_probability": 0.68,
+    "reported_confidence": 0.58,
+    "referred": true,
+    "raw_referred": true,
+    "renormalized": true
+  },
+  "status": "success",
+  "terminal": true,
+  "fatal": false,
+  "finished_at": "2026-09-22T10:07:16.109192+00:00"
+}

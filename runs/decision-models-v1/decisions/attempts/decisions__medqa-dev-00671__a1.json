@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00671",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "7ce0c0ce31fa81639004c96a1684bd6ac1a9768f28a03b60271e294759cd5a1a",
+  "started_at": "2026-10-07T02:24:16.396577+00:00",
+  "budget_charge_usd": 3.66e-05,
+  "http_status": 200,
+  "request_id": "req_187512d1a66c45eaaf4dd870736e13f1",
+  "latency_ms": 276.5749000245705,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "C",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.01
+          },
+          {
+            "value": "B",
+            "probability": 0.03
+          },
+          {
+            "value": "C",
+            "probability": 0.53
+          },
+          {
+            "value": "D",
+            "probability": 0.43
+          }
+        ],
+        "confidence": 0.37
+      }
+    ],
+    "usage": {
+      "input_tokens": 366,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 366
+    }
+  },
+  "usage": {
+    "input_tokens": 366,
+    "output_tokens": 0,
+    "standardized_usd": 3.66e-05
+  },
+  "value": {
+    "answer": "C",
+    "correct": false,
+    "probabilities": {
+      "A": 0.01,
+      "B": 0.03,
+      "C": 0.53,
+      "D": 0.43
+    },
+    "raw_probabilities": {
+      "A": 0.01,
+      "B": 0.03,
+      "C": 0.53,
+      "D": 0.43
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.53,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.37,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:16.675025+00:00"
+}

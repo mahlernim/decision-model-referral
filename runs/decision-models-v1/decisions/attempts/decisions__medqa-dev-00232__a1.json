@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00232",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "6c7d32aad1f2d4b8a7007d2055d9bd915a52cb4fd322dc2a2fea73c218164e0c",
+  "started_at": "2026-10-07T02:23:36.449038+00:00",
+  "budget_charge_usd": 3.06e-05,
+  "http_status": 200,
+  "request_id": "req_e00f10bc47a64d0e8bc9cede2d80b825",
+  "latency_ms": 300.94659997848794,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.0
+          },
+          {
+            "value": "B",
+            "probability": 0.01
+          },
+          {
+            "value": "C",
+            "probability": 0.42
+          },
+          {
+            "value": "D",
+            "probability": 0.57
+          }
+        ],
+        "confidence": 0.43
+      }
+    ],
+    "usage": {
+      "input_tokens": 306,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 306
+    }
+  },
+  "usage": {
+    "input_tokens": 306,
+    "output_tokens": 0,
+    "standardized_usd": 3.06e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": false,
+    "probabilities": {
+      "A": 0.0,
+      "B": 0.010000000000000002,
+      "C": 0.42000000000000004,
+      "D": 0.5700000000000001
+    },
+    "raw_probabilities": {
+      "A": 0.0,
+      "B": 0.01,
+      "C": 0.42,
+      "D": 0.57
+    },
+    "probability_sum": 0.9999999999999999,
+    "selected_probability": 0.5700000000000001,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.43,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:23:36.752396+00:00"
+}

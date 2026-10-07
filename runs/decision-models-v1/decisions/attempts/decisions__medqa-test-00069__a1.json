@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00069",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "e54e4c0b00cd483995baec6ee17c79097e37602fe0b7d64bf01221587fb6d96b",
+  "started_at": "2026-10-07T02:26:15.836342+00:00",
+  "budget_charge_usd": 3.49e-05,
+  "http_status": 200,
+  "request_id": "req_aaded311146346b99412cfe5bb60476f",
+  "latency_ms": 543.1764000095427,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.45
+          },
+          {
+            "value": "B",
+            "probability": 0.01
+          },
+          {
+            "value": "C",
+            "probability": 0.03
+          },
+          {
+            "value": "D",
+            "probability": 0.51
+          }
+        ],
+        "confidence": 0.35
+      }
+    ],
+    "usage": {
+      "input_tokens": 349,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 349
+    }
+  },
+  "usage": {
+    "input_tokens": 349,
+    "output_tokens": 0,
+    "standardized_usd": 3.49e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": false,
+    "probabilities": {
+      "A": 0.45,
+      "B": 0.01,
+      "C": 0.03,
+      "D": 0.51
+    },
+    "raw_probabilities": {
+      "A": 0.45,
+      "B": 0.01,
+      "C": 0.03,
+      "D": 0.51
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.51,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.35,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:26:16.381455+00:00"
+}

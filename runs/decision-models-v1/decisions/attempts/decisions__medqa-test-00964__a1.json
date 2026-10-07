@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00964",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "8c950b62ccedbc2ad3c3e6ccbd37b35149397d489d86a969911b3f4c677b6a74",
+  "started_at": "2026-10-07T02:27:40.506850+00:00",
+  "budget_charge_usd": 5.55e-05,
+  "http_status": 200,
+  "request_id": "req_7eba0de7bf264223a585764084163070",
+  "latency_ms": 423.08600002434105,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "B",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.07
+          },
+          {
+            "value": "B",
+            "probability": 0.82
+          },
+          {
+            "value": "C",
+            "probability": 0.1
+          },
+          {
+            "value": "D",
+            "probability": 0.01
+          }
+        ],
+        "confidence": 0.76
+      }
+    ],
+    "usage": {
+      "input_tokens": 555,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 555
+    }
+  },
+  "usage": {
+    "input_tokens": 555,
+    "output_tokens": 0,
+    "standardized_usd": 5.55e-05
+  },
+  "value": {
+    "answer": "B",
+    "correct": false,
+    "probabilities": {
+      "A": 0.07,
+      "B": 0.82,
+      "C": 0.1,
+      "D": 0.01
+    },
+    "raw_probabilities": {
+      "A": 0.07,
+      "B": 0.82,
+      "C": 0.1,
+      "D": 0.01
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.82,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.76,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:40.931445+00:00"
+}

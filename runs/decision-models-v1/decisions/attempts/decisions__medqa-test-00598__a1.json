@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00598",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "605505bfcf490fb02c3e9ee6954c36e07731306b7a825db219113126b9a779d0",
+  "started_at": "2026-10-07T02:27:08.464631+00:00",
+  "budget_charge_usd": 3.3e-05,
+  "http_status": 200,
+  "request_id": "req_d76049db980e44a59effcf9767f115be",
+  "latency_ms": 442.1965000219643,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "B",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.13
+          },
+          {
+            "value": "B",
+            "probability": 0.87
+          },
+          {
+            "value": "C",
+            "probability": 0.0
+          },
+          {
+            "value": "D",
+            "probability": 0.0
+          }
+        ],
+        "confidence": 0.83
+      }
+    ],
+    "usage": {
+      "input_tokens": 330,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 330
+    }
+  },
+  "usage": {
+    "input_tokens": 330,
+    "output_tokens": 0,
+    "standardized_usd": 3.3e-05
+  },
+  "value": {
+    "answer": "B",
+    "correct": true,
+    "probabilities": {
+      "A": 0.13,
+      "B": 0.87,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "raw_probabilities": {
+      "A": 0.13,
+      "B": 0.87,
+      "C": 0.0,
+      "D": 0.0
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.87,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.83,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:08.908849+00:00"
+}

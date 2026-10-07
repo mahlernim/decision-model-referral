@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00497",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "1b4f679fa03199994111d5c3e322ced8ab06f6db9373987a0844230d58496a48",
+  "started_at": "2026-10-07T02:26:59.308140+00:00",
+  "budget_charge_usd": 3.18e-05,
+  "http_status": 200,
+  "request_id": "req_965d1aa260c245fdbccd8c53fb92ac14",
+  "latency_ms": 397.2054999903776,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.02
+          },
+          {
+            "value": "B",
+            "probability": 0.13
+          },
+          {
+            "value": "C",
+            "probability": 0.21
+          },
+          {
+            "value": "D",
+            "probability": 0.64
+          }
+        ],
+        "confidence": 0.52
+      }
+    ],
+    "usage": {
+      "input_tokens": 318,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 318
+    }
+  },
+  "usage": {
+    "input_tokens": 318,
+    "output_tokens": 0,
+    "standardized_usd": 3.18e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.02,
+      "B": 0.13,
+      "C": 0.21,
+      "D": 0.64
+    },
+    "raw_probabilities": {
+      "A": 0.02,
+      "B": 0.13,
+      "C": 0.21,
+      "D": 0.64
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.64,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.52,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:26:59.707493+00:00"
+}

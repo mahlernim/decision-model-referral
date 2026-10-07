@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00629",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "34518230b8a053e7c25e08e22618b8ca217037d8eea81597bdd64cc502c82c8a",
+  "started_at": "2026-10-07T02:24:12.623945+00:00",
+  "budget_charge_usd": 3.77e-05,
+  "http_status": 200,
+  "request_id": "req_495cdbd0206343d691ce8bc99c2ff64c",
+  "latency_ms": 392.84579997183755,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "B",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.01
+          },
+          {
+            "value": "B",
+            "probability": 0.58
+          },
+          {
+            "value": "C",
+            "probability": 0.02
+          },
+          {
+            "value": "D",
+            "probability": 0.39
+          }
+        ],
+        "confidence": 0.44
+      }
+    ],
+    "usage": {
+      "input_tokens": 377,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 377
+    }
+  },
+  "usage": {
+    "input_tokens": 377,
+    "output_tokens": 0,
+    "standardized_usd": 3.77e-05
+  },
+  "value": {
+    "answer": "B",
+    "correct": false,
+    "probabilities": {
+      "A": 0.01,
+      "B": 0.58,
+      "C": 0.02,
+      "D": 0.39
+    },
+    "raw_probabilities": {
+      "A": 0.01,
+      "B": 0.58,
+      "C": 0.02,
+      "D": 0.39
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.58,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.44,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:13.018440+00:00"
+}

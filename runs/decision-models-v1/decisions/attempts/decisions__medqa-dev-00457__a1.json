@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00457",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "eb8b7d49be09dd3c5510b132886728663c92a9dc37075203284b77d8a2df0343",
+  "started_at": "2026-10-07T02:23:57.273397+00:00",
+  "budget_charge_usd": 4.41e-05,
+  "http_status": 200,
+  "request_id": "req_7dee136c4f8247259ccd259871d157f0",
+  "latency_ms": 303.0560999759473,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "C",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.27
+          },
+          {
+            "value": "B",
+            "probability": 0.21
+          },
+          {
+            "value": "C",
+            "probability": 0.45
+          },
+          {
+            "value": "D",
+            "probability": 0.07
+          }
+        ],
+        "confidence": 0.27
+      }
+    ],
+    "usage": {
+      "input_tokens": 441,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 441
+    }
+  },
+  "usage": {
+    "input_tokens": 441,
+    "output_tokens": 0,
+    "standardized_usd": 4.41e-05
+  },
+  "value": {
+    "answer": "C",
+    "correct": false,
+    "probabilities": {
+      "A": 0.27,
+      "B": 0.21,
+      "C": 0.45,
+      "D": 0.07
+    },
+    "raw_probabilities": {
+      "A": 0.27,
+      "B": 0.21,
+      "C": 0.45,
+      "D": 0.07
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.45,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.27,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:23:57.578888+00:00"
+}

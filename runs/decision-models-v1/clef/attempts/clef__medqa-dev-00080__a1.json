@@ -1,0 +1,72 @@
+{
+  "job": "clef__medqa-dev-00080",
+  "model": "clef",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "32c7a0ed6fbcac825b804f71fc8cf9a8211e8baced82bc4f0c3c16819e77b74e",
+  "started_at": "2026-10-07T02:20:15.221719+00:00",
+  "budget_charge_usd": 8.088e-05,
+  "http_status": 200,
+  "request_id": "a4696cf2de3ca0c0-ICN",
+  "latency_ms": 631.3000000081956,
+  "raw_response": {
+    "result": {
+      "model": "clef",
+      "answers": {
+        "answer": {
+          "type": "choice",
+          "choice": "A",
+          "probabilities": {
+            "A": 0.9706,
+            "B": 0.009,
+            "C": 0.0117,
+            "D": 0.0087
+          },
+          "confidence": 0.9232
+        }
+      },
+      "usage": {
+        "input_tokens": 337,
+        "output_tokens": 0
+      }
+    },
+    "success": true,
+    "errors": [],
+    "messages": []
+  },
+  "usage": {
+    "input_tokens": 337,
+    "output_tokens": 0,
+    "standardized_usd": 8.088e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.9706,
+      "B": 0.009,
+      "C": 0.0117,
+      "D": 0.0087
+    },
+    "raw_probabilities": {
+      "A": 0.9706,
+      "B": 0.009,
+      "C": 0.0117,
+      "D": 0.0087
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.9706,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.9232,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:20:15.854702+00:00"
+}

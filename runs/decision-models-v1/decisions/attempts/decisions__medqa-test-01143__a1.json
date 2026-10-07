@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-01143",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "041e77406d9243b48d01f00a721c1f4f1fc9ca6a0ddf268ab2439ee039a564db",
+  "started_at": "2026-10-07T02:27:57.008142+00:00",
+  "budget_charge_usd": 2.79e-05,
+  "http_status": 200,
+  "request_id": "req_f724d92db30948e2b96791850c5c318a",
+  "latency_ms": 400.1323999837041,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.11
+          },
+          {
+            "value": "B",
+            "probability": 0.07
+          },
+          {
+            "value": "C",
+            "probability": 0.36
+          },
+          {
+            "value": "D",
+            "probability": 0.46
+          }
+        ],
+        "confidence": 0.28
+      }
+    ],
+    "usage": {
+      "input_tokens": 279,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 279
+    }
+  },
+  "usage": {
+    "input_tokens": 279,
+    "output_tokens": 0,
+    "standardized_usd": 2.79e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": false,
+    "probabilities": {
+      "A": 0.11,
+      "B": 0.07,
+      "C": 0.36,
+      "D": 0.46
+    },
+    "raw_probabilities": {
+      "A": 0.11,
+      "B": 0.07,
+      "C": 0.36,
+      "D": 0.46
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.46,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.28,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:57.410076+00:00"
+}

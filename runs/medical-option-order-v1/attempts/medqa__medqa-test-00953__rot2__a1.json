@@ -1,0 +1,74 @@
+{
+  "eval_id": "medqa__medqa-test-00953__rot2",
+  "item_id": "medqa-test-00953",
+  "cohort": "medqa",
+  "variant": "rot2",
+  "request_hash": "b4421546921e681afdbc476a9b1c6ca6b6b914d9005d420f5cf7addf963a4315",
+  "attempt": 1,
+  "manifest_hash": "95fa409667e3ae3367fe7f86a040408f754435cac59faf77b245878970056879",
+  "started_at": "2026-09-22T10:02:11.057777+00:00",
+  "budget_charge_usd": 3.3600000000000004e-05,
+  "estimated_cost_usd": 2.6880000000000004e-05,
+  "input_tokens": 640,
+  "latency_ms": 618.7339000025531,
+  "wire_request_sha256": "295b80f59325f8060669ac69197faa58135111e8b46a96812888bc4059c1abff",
+  "wire_request_verified": true,
+  "response_body_sha256": "9f2531d689052fa83061beccef8751b12522652f3f31bbb1b6696ff33a651182",
+  "response_body_path": "runs/medical-option-order-v1/raw/medqa__medqa-test-00953__rot2__a1.json",
+  "raw_response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "answer": {
+        "type": "choice",
+        "choice": "A",
+        "confidence": 0.74,
+        "probabilities": {
+          "D": 0.18,
+          "C": 0.0,
+          "B": 0.01,
+          "A": 0.81
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 640,
+      "output_tokens": 45
+    }
+  },
+  "value": {
+    "prediction": "A",
+    "probabilities": {
+      "D": 0.18,
+      "C": 0.0,
+      "B": 0.01,
+      "A": 0.81
+    },
+    "rank_confidence": 0.74,
+    "reported_probability_sum": 1.0,
+    "probabilities_renormalized": false,
+    "raw_vector_brier": 0.06859999999999998,
+    "raw_gold_log_loss": 0.21072103131565253,
+    "correct": true,
+    "brier": 0.06859999999999998,
+    "log_loss": 0.21072103131565253,
+    "input_tokens": 640,
+    "estimated_cost_usd": 2.6880000000000004e-05,
+    "semantic_prediction": "C",
+    "semantic_probabilities": {
+      "B": 0.18,
+      "A": 0.0,
+      "D": 0.01,
+      "C": 0.81
+    },
+    "selected_probability": 0.81,
+    "raw_selected_probability": 0.81,
+    "reported_confidence": 0.74,
+    "referred": false,
+    "raw_referred": false,
+    "renormalized": false
+  },
+  "status": "success",
+  "terminal": true,
+  "fatal": false,
+  "finished_at": "2026-09-22T10:02:11.680090+00:00"
+}

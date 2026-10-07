@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00714",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "e03d94bec15e88bc282b033b49128362d65cabb04d76b4f1e1786a8bcce23a3d",
+  "started_at": "2026-10-07T02:24:19.993220+00:00",
+  "budget_charge_usd": 2.7400000000000002e-05,
+  "http_status": 200,
+  "request_id": "req_d83f2ecedd7e49989fa5e233ea2893a9",
+  "latency_ms": 266.9617000501603,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.01
+          },
+          {
+            "value": "B",
+            "probability": 0.0
+          },
+          {
+            "value": "C",
+            "probability": 0.44
+          },
+          {
+            "value": "D",
+            "probability": 0.55
+          }
+        ],
+        "confidence": 0.4
+      }
+    ],
+    "usage": {
+      "input_tokens": 274,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 274
+    }
+  },
+  "usage": {
+    "input_tokens": 274,
+    "output_tokens": 0,
+    "standardized_usd": 2.7400000000000002e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.01,
+      "B": 0.0,
+      "C": 0.44,
+      "D": 0.55
+    },
+    "raw_probabilities": {
+      "A": 0.01,
+      "B": 0.0,
+      "C": 0.44,
+      "D": 0.55
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.55,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.4,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:20.261848+00:00"
+}

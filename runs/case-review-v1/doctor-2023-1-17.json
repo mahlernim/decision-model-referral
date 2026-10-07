@@ -1,0 +1,167 @@
+{
+  "item_id": "doctor-2023-1-17",
+  "selected_option": "C",
+  "official_key": "A",
+  "request_hash": "b4c3e49fe254ffe1cd555cf1196adc9e9bbf65e1d5cef410498b0ece118ee278",
+  "requested_at": "2026-10-07T10:47:48.803652+00:00",
+  "resolved_model": "gpt-6.1-sol",
+  "status": "completed",
+  "usage": {
+    "input_tokens": 434,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 98,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 532
+  },
+  "raw_response": {
+    "id": "resp_07d5bfd6537cacdf016ac62351464087d1a8a103283ce00f08",
+    "object": "response",
+    "created_at": 1791370065,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791370068,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 4096,
+    "max_tool_calls": null,
+    "model": "gpt-6.1-sol",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_07d5bfd6537cacdf016ac623528e1487d193aa036cfc08a627",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"category\":\"law_policy\",\"description\":\"The item appears to test which authority must approve an urgent patient transfer under the Medical Service Act when the patient cannot express consent and the guardian is unreachable. The selected public health center director differs from the keyed district head.\",\"evidence\":\"\\\"A\\\":\\\"관할 구청장\\\",\\\"B\\\":\\\"관할 광역시장\\\",\\\"C\\\":\\\"관할 보건소장\\\"\",\"key_concern\":false,\"certainty\":\"high\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "low",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "review",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "category": {
+              "type": "string",
+              "enum": [
+                "clinical_distinction",
+                "numerical_lab",
+                "negative_wording",
+                "law_policy",
+                "possible_item_defect",
+                "indeterminate"
+              ]
+            },
+            "description": {
+              "type": "string"
+            },
+            "evidence": {
+              "type": "string"
+            },
+            "key_concern": {
+              "type": "boolean"
+            },
+            "certainty": {
+              "type": "string",
+              "enum": [
+                "low",
+                "medium",
+                "high"
+              ]
+            }
+          },
+          "required": [
+            "category",
+            "description",
+            "evidence",
+            "key_concern",
+            "certainty"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 434,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 98,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 532
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "value": {
+    "category": "law_policy",
+    "description": "The item appears to test which authority must approve an urgent patient transfer under the Medical Service Act when the patient cannot express consent and the guardian is unreachable. The selected public health center director differs from the keyed district head.",
+    "evidence": "\"A\":\"관할 구청장\",\"B\":\"관할 광역시장\",\"C\":\"관할 보건소장\"",
+    "key_concern": false,
+    "certainty": "high"
+  }
+}

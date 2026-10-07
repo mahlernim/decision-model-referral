@@ -1,0 +1,180 @@
+{
+  "job": "tags__doctor-2022-2-13",
+  "attempt": 1,
+  "manifest_hash": "f93ed4d317277f461d16aa58b326e5c7f39a7031b4c801ddc0fed4a8d094a2fa",
+  "request_hash": "f4e4dd07fc83f57ff326a767eb24d633773d928b248ba80ae1110c712b153060",
+  "started_at": "2026-10-06T12:02:47.654495+00:00",
+  "budget_charge_usd": 8.9e-05,
+  "http_status": 200,
+  "latency_ms": 4400.788599974476,
+  "raw_response": {
+    "id": "resp_00684cbe54906ece016ac4e36758a087d08a26fce2fb7f5b0a",
+    "object": "response",
+    "created_at": 1791288167,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791288171,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 16000,
+    "max_tool_calls": null,
+    "model": "gpt-6.1-sol",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_00684cbe54906ece016ac4e36aacc487d0b3586d1d411a59d9",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"task\":\"diagnosis\",\"laboratory\":true,\"numeric\":true,\"negative_wording\":false,\"korean_law_policy\":false,\"input_status\":\"complete\",\"evidence\":\"진단은?\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "tags",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "task": {
+              "type": "string",
+              "enum": [
+                "diagnosis",
+                "investigation",
+                "treatment",
+                "prevention",
+                "law_policy",
+                "other"
+              ]
+            },
+            "laboratory": {
+              "type": "boolean"
+            },
+            "numeric": {
+              "type": "boolean"
+            },
+            "negative_wording": {
+              "type": "boolean"
+            },
+            "korean_law_policy": {
+              "type": "boolean"
+            },
+            "input_status": {
+              "type": "string",
+              "enum": [
+                "complete",
+                "possibly_incomplete",
+                "indeterminate"
+              ]
+            },
+            "evidence": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "task",
+            "laboratory",
+            "numeric",
+            "negative_wording",
+            "korean_law_policy",
+            "input_status",
+            "evidence"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 645,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 49,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 694
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "usage": {
+    "input_tokens": 645,
+    "output_tokens": 49,
+    "cached_tokens": 0,
+    "billed_usd": 8.9e-05,
+    "standardized_usd": 8.9e-05
+  },
+  "resolved_model": "gpt-6.1-sol",
+  "value": {
+    "task": "diagnosis",
+    "laboratory": true,
+    "numeric": true,
+    "negative_wording": false,
+    "korean_law_policy": false,
+    "input_status": "complete",
+    "evidence": "진단은?",
+    "evidence_exact_match": true,
+    "resolved_reasoning_effort": "medium"
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-06T12:02:52.057450+00:00"
+}

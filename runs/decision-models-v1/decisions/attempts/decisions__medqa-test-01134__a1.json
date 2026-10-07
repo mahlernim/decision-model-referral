@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-01134",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "77e05b77e1e10283b4b3e4c718c2364299cd55cfcbce7b96d6a38982ee725e6a",
+  "started_at": "2026-10-07T02:27:56.208464+00:00",
+  "budget_charge_usd": 2.9e-05,
+  "http_status": 200,
+  "request_id": "req_e77642d7bcfa4eea80c9eed089530366",
+  "latency_ms": 380.8060000301339,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.69
+          },
+          {
+            "value": "B",
+            "probability": 0.04
+          },
+          {
+            "value": "C",
+            "probability": 0.12
+          },
+          {
+            "value": "D",
+            "probability": 0.15
+          }
+        ],
+        "confidence": 0.59
+      }
+    ],
+    "usage": {
+      "input_tokens": 290,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 290
+    }
+  },
+  "usage": {
+    "input_tokens": 290,
+    "output_tokens": 0,
+    "standardized_usd": 2.9e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.6900000000000001,
+      "B": 0.04000000000000001,
+      "C": 0.12000000000000001,
+      "D": 0.15000000000000002
+    },
+    "raw_probabilities": {
+      "A": 0.69,
+      "B": 0.04,
+      "C": 0.12,
+      "D": 0.15
+    },
+    "probability_sum": 0.9999999999999999,
+    "selected_probability": 0.6900000000000001,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.59,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:56.591260+00:00"
+}

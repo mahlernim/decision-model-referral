@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-01142",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "f513c27bcc43d31f865477bf3e6e9c5685d1e301112bf047c3586eb2595cdea2",
+  "started_at": "2026-10-07T02:24:57.211246+00:00",
+  "budget_charge_usd": 3.27e-05,
+  "http_status": 200,
+  "request_id": "req_4852bc28dbb741d5ac8280bc56ced362",
+  "latency_ms": 241.6293999995105,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.99
+          },
+          {
+            "value": "B",
+            "probability": 0.0
+          },
+          {
+            "value": "C",
+            "probability": 0.01
+          },
+          {
+            "value": "D",
+            "probability": 0.0
+          }
+        ],
+        "confidence": 0.99
+      }
+    ],
+    "usage": {
+      "input_tokens": 327,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 327
+    }
+  },
+  "usage": {
+    "input_tokens": 327,
+    "output_tokens": 0,
+    "standardized_usd": 3.27e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.99,
+      "B": 0.0,
+      "C": 0.01,
+      "D": 0.0
+    },
+    "raw_probabilities": {
+      "A": 0.99,
+      "B": 0.0,
+      "C": 0.01,
+      "D": 0.0
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.99,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.99,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:57.454796+00:00"
+}

@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00724",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "e4e732f19ec3793c7b733919b873b835a5508be757be6b4b6e21120ce7210c17",
+  "started_at": "2026-10-07T02:27:19.415811+00:00",
+  "budget_charge_usd": 4.380000000000001e-05,
+  "http_status": 200,
+  "request_id": "req_8a2bcb6f4980414ba4bf5516ddb77a10",
+  "latency_ms": 390.5980000272393,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.52
+          },
+          {
+            "value": "B",
+            "probability": 0.03
+          },
+          {
+            "value": "C",
+            "probability": 0.31
+          },
+          {
+            "value": "D",
+            "probability": 0.14
+          }
+        ],
+        "confidence": 0.36
+      }
+    ],
+    "usage": {
+      "input_tokens": 438,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 438
+    }
+  },
+  "usage": {
+    "input_tokens": 438,
+    "output_tokens": 0,
+    "standardized_usd": 4.380000000000001e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": false,
+    "probabilities": {
+      "A": 0.52,
+      "B": 0.03,
+      "C": 0.31,
+      "D": 0.14
+    },
+    "raw_probabilities": {
+      "A": 0.52,
+      "B": 0.03,
+      "C": 0.31,
+      "D": 0.14
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.52,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.36,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:19.808273+00:00"
+}

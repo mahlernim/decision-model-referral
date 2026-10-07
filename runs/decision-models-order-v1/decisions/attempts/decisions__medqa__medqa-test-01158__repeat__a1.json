@@ -1,0 +1,99 @@
+{
+  "eval_id": "decisions__medqa__medqa-test-01158__repeat",
+  "item_id": "medqa-test-01158",
+  "cohort": "medqa",
+  "variant": "repeat",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "b4568de9b0cce56a9edcc5eeabdd2ccf4ca88daf227afe5618f29e3cc489e784",
+  "request_hash": "6c760f5a1738b3fc65cd3727501501fd4499c922da70b7249854e53e6419c8af",
+  "started_at": "2026-10-07T04:36:04.934537+00:00",
+  "budget_charge_usd": 5.3400000000000004e-05,
+  "http_status": 200,
+  "latency_ms": 256.339100014884,
+  "request_id": "req_532640d5e3a6414d905e7c6e131318b3",
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.02
+          },
+          {
+            "value": "B",
+            "probability": 0.02
+          },
+          {
+            "value": "C",
+            "probability": 0.19
+          },
+          {
+            "value": "D",
+            "probability": 0.77
+          }
+        ],
+        "confidence": 0.69
+      }
+    ],
+    "usage": {
+      "input_tokens": 534,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 534
+    }
+  },
+  "usage": {
+    "input_tokens": 534,
+    "output_tokens": 0,
+    "standardized_usd": 5.3400000000000004e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.02,
+      "B": 0.02,
+      "C": 0.19,
+      "D": 0.77
+    },
+    "raw_probabilities": {
+      "A": 0.02,
+      "B": 0.02,
+      "C": 0.19,
+      "D": 0.77
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.77,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.69,
+    "tied_at_maximum": false,
+    "semantic_prediction": "D",
+    "semantic_probabilities": {
+      "A": 0.02,
+      "B": 0.02,
+      "C": 0.19,
+      "D": 0.77
+    },
+    "referred": true
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T04:36:05.192164+00:00"
+}

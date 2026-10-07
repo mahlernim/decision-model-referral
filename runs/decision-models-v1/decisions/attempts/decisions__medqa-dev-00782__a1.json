@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00782",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "ffbbfadb92a16f88f3c23fd8e3393b12b6fef5fe4dcd98ff7a577e553176a752",
+  "started_at": "2026-10-07T02:24:25.807143+00:00",
+  "budget_charge_usd": 3.05e-05,
+  "http_status": 200,
+  "request_id": "req_8f5a24afcd9d43a59bcf8a6140c17223",
+  "latency_ms": 258.6922000045888,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.97
+          },
+          {
+            "value": "B",
+            "probability": 0.02
+          },
+          {
+            "value": "C",
+            "probability": 0.01
+          },
+          {
+            "value": "D",
+            "probability": 0.0
+          }
+        ],
+        "confidence": 0.96
+      }
+    ],
+    "usage": {
+      "input_tokens": 305,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 305
+    }
+  },
+  "usage": {
+    "input_tokens": 305,
+    "output_tokens": 0,
+    "standardized_usd": 3.05e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.97,
+      "B": 0.02,
+      "C": 0.01,
+      "D": 0.0
+    },
+    "raw_probabilities": {
+      "A": 0.97,
+      "B": 0.02,
+      "C": 0.01,
+      "D": 0.0
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.97,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.96,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:26.067515+00:00"
+}

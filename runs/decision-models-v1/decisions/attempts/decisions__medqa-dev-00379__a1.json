@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00379",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "033a60da0cf88779c5c14e01936b444ee214afeeba0d5053ef247b9ea47d1ded",
+  "started_at": "2026-10-07T02:23:50.443492+00:00",
+  "budget_charge_usd": 4.3400000000000005e-05,
+  "http_status": 200,
+  "request_id": "req_491474d2fab64f4cb8b1ade4ef2787a1",
+  "latency_ms": 427.6784000103362,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.6
+          },
+          {
+            "value": "B",
+            "probability": 0.09
+          },
+          {
+            "value": "C",
+            "probability": 0.13
+          },
+          {
+            "value": "D",
+            "probability": 0.18
+          }
+        ],
+        "confidence": 0.47
+      }
+    ],
+    "usage": {
+      "input_tokens": 434,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 434
+    }
+  },
+  "usage": {
+    "input_tokens": 434,
+    "output_tokens": 0,
+    "standardized_usd": 4.3400000000000005e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.6,
+      "B": 0.09,
+      "C": 0.13,
+      "D": 0.18
+    },
+    "raw_probabilities": {
+      "A": 0.6,
+      "B": 0.09,
+      "C": 0.13,
+      "D": 0.18
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.6,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.47,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:23:50.872764+00:00"
+}

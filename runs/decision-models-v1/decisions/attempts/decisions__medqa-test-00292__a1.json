@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00292",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "d1c7a83206116e5d47a3ae5179c1195b3ad7845d163b549f32816436e417496a",
+  "started_at": "2026-10-07T02:26:40.100182+00:00",
+  "budget_charge_usd": 2.71e-05,
+  "http_status": 200,
+  "request_id": "req_70cb476563eb45e79e28b6c1077482e2",
+  "latency_ms": 389.5347000216134,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.61
+          },
+          {
+            "value": "B",
+            "probability": 0.1
+          },
+          {
+            "value": "C",
+            "probability": 0.28
+          },
+          {
+            "value": "D",
+            "probability": 0.01
+          }
+        ],
+        "confidence": 0.48
+      }
+    ],
+    "usage": {
+      "input_tokens": 271,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 271
+    }
+  },
+  "usage": {
+    "input_tokens": 271,
+    "output_tokens": 0,
+    "standardized_usd": 2.71e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": false,
+    "probabilities": {
+      "A": 0.61,
+      "B": 0.1,
+      "C": 0.28,
+      "D": 0.01
+    },
+    "raw_probabilities": {
+      "A": 0.61,
+      "B": 0.1,
+      "C": 0.28,
+      "D": 0.01
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.61,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.48,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:26:40.491554+00:00"
+}

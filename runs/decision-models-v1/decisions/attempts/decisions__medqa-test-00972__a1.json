@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00972",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "917315d22af8676736e392c3768e2f09a461bd24f537a97cf7a6ef4030ccc77e",
+  "started_at": "2026-10-07T02:27:41.110366+00:00",
+  "budget_charge_usd": 2.86e-05,
+  "http_status": 200,
+  "request_id": "req_e3678654c38a49c080ebeddb8514af4e",
+  "latency_ms": 248.0504999984987,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.01
+          },
+          {
+            "value": "B",
+            "probability": 0.01
+          },
+          {
+            "value": "C",
+            "probability": 0.16
+          },
+          {
+            "value": "D",
+            "probability": 0.82
+          }
+        ],
+        "confidence": 0.76
+      }
+    ],
+    "usage": {
+      "input_tokens": 286,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 286
+    }
+  },
+  "usage": {
+    "input_tokens": 286,
+    "output_tokens": 0,
+    "standardized_usd": 2.86e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": false,
+    "probabilities": {
+      "A": 0.01,
+      "B": 0.01,
+      "C": 0.16,
+      "D": 0.82
+    },
+    "raw_probabilities": {
+      "A": 0.01,
+      "B": 0.01,
+      "C": 0.16,
+      "D": 0.82
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.82,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.76,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:41.359991+00:00"
+}

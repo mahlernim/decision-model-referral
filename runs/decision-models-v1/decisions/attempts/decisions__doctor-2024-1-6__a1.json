@@ -1,0 +1,95 @@
+{
+  "job": "decisions__doctor-2024-1-6",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "f70265f5a7c483d457ba0433b154235d5587ecaf307d9ee12b02db7314fa2cf1",
+  "started_at": "2026-10-07T02:25:58.125477+00:00",
+  "budget_charge_usd": 2.9900000000000002e-05,
+  "http_status": 200,
+  "request_id": "req_02d87317cde849bc92c55fea1491b836",
+  "latency_ms": 275.7366999867372,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.91
+          },
+          {
+            "value": "B",
+            "probability": 0.01
+          },
+          {
+            "value": "C",
+            "probability": 0.02
+          },
+          {
+            "value": "D",
+            "probability": 0.02
+          },
+          {
+            "value": "E",
+            "probability": 0.04
+          }
+        ],
+        "confidence": 0.89
+      }
+    ],
+    "usage": {
+      "input_tokens": 299,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 299
+    }
+  },
+  "usage": {
+    "input_tokens": 299,
+    "output_tokens": 0,
+    "standardized_usd": 2.9900000000000002e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.91,
+      "B": 0.01,
+      "C": 0.02,
+      "D": 0.02,
+      "E": 0.04
+    },
+    "raw_probabilities": {
+      "A": 0.91,
+      "B": 0.01,
+      "C": 0.02,
+      "D": 0.02,
+      "E": 0.04
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.91,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "native_confidence": 0.89,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:25:58.402852+00:00"
+}

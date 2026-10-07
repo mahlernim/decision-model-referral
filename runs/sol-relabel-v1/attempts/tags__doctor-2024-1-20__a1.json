@@ -1,0 +1,180 @@
+{
+  "job": "tags__doctor-2024-1-20",
+  "attempt": 1,
+  "manifest_hash": "f93ed4d317277f461d16aa58b326e5c7f39a7031b4c801ddc0fed4a8d094a2fa",
+  "request_hash": "dc53f55d2466b80ead1028a1b8908b54099424f5d608c9458e9402f84bec49a1",
+  "started_at": "2026-10-06T12:06:40.493672+00:00",
+  "budget_charge_usd": 7.980000000000002e-05,
+  "http_status": 200,
+  "latency_ms": 4995.471299975179,
+  "raw_response": {
+    "id": "resp_03e3d62bc4eff398016ac4e45087c087d08afb56870258c3e0",
+    "object": "response",
+    "created_at": 1791288400,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791288404,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 16000,
+    "max_tool_calls": null,
+    "model": "gpt-6.1-sol",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_03e3d62bc4eff398016ac4e453a0f487d09acd44f92d1367f1",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"task\":\"law_policy\",\"laboratory\":false,\"numeric\":false,\"negative_wording\":false,\"korean_law_policy\":true,\"input_status\":\"complete\",\"evidence\":\"「의료법」에 따라 보건 복지부장관이 의사 '갑'에게 취할 수 있는 조치는?\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "medium",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "tags",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "task": {
+              "type": "string",
+              "enum": [
+                "diagnosis",
+                "investigation",
+                "treatment",
+                "prevention",
+                "law_policy",
+                "other"
+              ]
+            },
+            "laboratory": {
+              "type": "boolean"
+            },
+            "numeric": {
+              "type": "boolean"
+            },
+            "negative_wording": {
+              "type": "boolean"
+            },
+            "korean_law_policy": {
+              "type": "boolean"
+            },
+            "input_status": {
+              "type": "string",
+              "enum": [
+                "complete",
+                "possibly_incomplete",
+                "indeterminate"
+              ]
+            },
+            "evidence": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "task",
+            "laboratory",
+            "numeric",
+            "negative_wording",
+            "korean_law_policy",
+            "input_status",
+            "evidence"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 0,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 433,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 73,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 506
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "usage": {
+    "input_tokens": 433,
+    "output_tokens": 73,
+    "cached_tokens": 0,
+    "billed_usd": 7.980000000000002e-05,
+    "standardized_usd": 7.980000000000002e-05
+  },
+  "resolved_model": "gpt-6.1-sol",
+  "value": {
+    "task": "law_policy",
+    "laboratory": false,
+    "numeric": false,
+    "negative_wording": false,
+    "korean_law_policy": true,
+    "input_status": "complete",
+    "evidence": "「의료법」에 따라 보건 복지부장관이 의사 '갑'에게 취할 수 있는 조치는?",
+    "evidence_exact_match": true,
+    "resolved_reasoning_effort": "medium"
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-06T12:06:45.490608+00:00"
+}

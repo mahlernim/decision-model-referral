@@ -1,0 +1,45 @@
+{
+  "eval_id": "medqa__medqa-test-01136__rot2",
+  "item_id": "medqa-test-01136",
+  "cohort": "medqa",
+  "variant": "rot2",
+  "request_hash": "58123b21642486015a230e2c19c5a4416eddd6c4b280a2d45748897d1b32bd43",
+  "attempt": 1,
+  "manifest_hash": "95fa409667e3ae3367fe7f86a040408f754435cac59faf77b245878970056879",
+  "started_at": "2026-09-22T10:05:04.475673+00:00",
+  "budget_charge_usd": 2.7300000000000006e-05,
+  "estimated_cost_usd": 2.1840000000000004e-05,
+  "input_tokens": 520,
+  "latency_ms": 244.19260000286158,
+  "wire_request_sha256": "b3ab1c8b05f33253e7f345f249477e63642ec3ee93589c547c96d95227aaf334",
+  "wire_request_verified": true,
+  "response_body_sha256": "e6a5abdaba1b1a5afd6bf45ae605c4770f567ae22949af78ec54c85817d0e213",
+  "response_body_path": "runs/medical-option-order-v1/raw/medqa__medqa-test-01136__rot2__a1.json",
+  "raw_response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "answer": {
+        "type": "choice",
+        "choice": "D",
+        "confidence": 0.3,
+        "probabilities": {
+          "A": 0.01,
+          "D": 0.47,
+          "B": 0.48,
+          "C": 0.04
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 520,
+      "output_tokens": 45
+    }
+  },
+  "status": "invalid",
+  "terminal": true,
+  "fatal": false,
+  "error_type": "ValueError",
+  "http_status": null,
+  "error_reason": "Choice inconsistent with probabilities",
+  "finished_at": "2026-09-22T10:05:04.723488+00:00"
+}

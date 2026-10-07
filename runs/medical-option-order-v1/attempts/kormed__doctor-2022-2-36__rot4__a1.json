@@ -1,0 +1,77 @@
+{
+  "eval_id": "kormed__doctor-2022-2-36__rot4",
+  "item_id": "doctor-2022-2-36",
+  "cohort": "kormed",
+  "variant": "rot4",
+  "request_hash": "f8e382262ddb27e73cce673bcd7542f600d3c0c00491ae48d02435f3129aa839",
+  "attempt": 1,
+  "manifest_hash": "95fa409667e3ae3367fe7f86a040408f754435cac59faf77b245878970056879",
+  "started_at": "2026-09-22T10:07:31.495759+00:00",
+  "budget_charge_usd": 3.465e-05,
+  "estimated_cost_usd": 2.7720000000000002e-05,
+  "input_tokens": 660,
+  "latency_ms": 207.42540000355802,
+  "wire_request_sha256": "45f8ad5abc39c3041bbceae674f1d498d195bc0249bf2e9f5367c39da88b8000",
+  "wire_request_verified": true,
+  "response_body_sha256": "58bd61de050c72c4a4e6889ddac9dee535a338ba673cec3898d39e464d398dcb",
+  "response_body_path": "runs/medical-option-order-v1/raw/kormed__doctor-2022-2-36__rot4__a1.json",
+  "raw_response": {
+    "model": "jev-1.13.0",
+    "answers": {
+      "answer": {
+        "type": "choice",
+        "choice": "B",
+        "confidence": 0.7,
+        "probabilities": {
+          "E": 0.07,
+          "A": 0.16,
+          "C": 0.0,
+          "D": 0.01,
+          "B": 0.76
+        }
+      }
+    },
+    "usage": {
+      "input_tokens": 660,
+      "output_tokens": 52
+    }
+  },
+  "value": {
+    "prediction": "B",
+    "probabilities": {
+      "E": 0.07,
+      "A": 0.16,
+      "C": 0.0,
+      "D": 0.01,
+      "B": 0.76
+    },
+    "rank_confidence": 0.7,
+    "reported_probability_sum": 1.0,
+    "probabilities_renormalized": false,
+    "raw_vector_brier": 0.0882,
+    "raw_gold_log_loss": 0.2744368457017603,
+    "correct": true,
+    "brier": 0.0882,
+    "log_loss": 0.2744368457017603,
+    "input_tokens": 660,
+    "estimated_cost_usd": 2.7720000000000002e-05,
+    "semantic_prediction": "A",
+    "semantic_probabilities": {
+      "D": 0.07,
+      "E": 0.16,
+      "B": 0.0,
+      "C": 0.01,
+      "A": 0.76
+    },
+    "selected_probability": 0.76,
+    "raw_selected_probability": 0.76,
+    "reported_confidence": 0.7,
+    "referred": false,
+    "raw_referred": false,
+    "renormalized": false
+  },
+  "status": "success",
+  "terminal": true,
+  "fatal": false,
+  "finished_at": "2026-09-22T10:07:31.707126+00:00"
+}

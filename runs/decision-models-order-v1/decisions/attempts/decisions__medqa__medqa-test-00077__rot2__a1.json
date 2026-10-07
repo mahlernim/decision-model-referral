@@ -1,0 +1,99 @@
+{
+  "eval_id": "decisions__medqa__medqa-test-00077__rot2",
+  "item_id": "medqa-test-00077",
+  "cohort": "medqa",
+  "variant": "rot2",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "b4568de9b0cce56a9edcc5eeabdd2ccf4ca88daf227afe5618f29e3cc489e784",
+  "request_hash": "bd46efa9493d56dc21b83d10662c3e057b32a21cbec3bf621880328280e9d96e",
+  "started_at": "2026-10-07T04:38:00.471147+00:00",
+  "budget_charge_usd": 2.76e-05,
+  "http_status": 200,
+  "latency_ms": 274.25079996464774,
+  "request_id": "req_77a114538ed841de9e0fb35a78e2fed6",
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.21
+          },
+          {
+            "value": "B",
+            "probability": 0.02
+          },
+          {
+            "value": "C",
+            "probability": 0.03
+          },
+          {
+            "value": "D",
+            "probability": 0.74
+          }
+        ],
+        "confidence": 0.65
+      }
+    ],
+    "usage": {
+      "input_tokens": 276,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 276
+    }
+  },
+  "usage": {
+    "input_tokens": 276,
+    "output_tokens": 0,
+    "standardized_usd": 2.76e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.21,
+      "B": 0.02,
+      "C": 0.03,
+      "D": 0.74
+    },
+    "raw_probabilities": {
+      "A": 0.21,
+      "B": 0.02,
+      "C": 0.03,
+      "D": 0.74
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.74,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.65,
+    "tied_at_maximum": false,
+    "semantic_prediction": "B",
+    "semantic_probabilities": {
+      "C": 0.21,
+      "D": 0.02,
+      "A": 0.03,
+      "B": 0.74
+    },
+    "referred": true
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T04:38:00.746906+00:00"
+}

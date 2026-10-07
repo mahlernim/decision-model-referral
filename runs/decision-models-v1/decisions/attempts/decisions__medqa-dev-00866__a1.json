@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00866",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "9f31d090e0f11620b7dc1e86ca4f4786e77c22297f46db917d5116366ef5f6b1",
+  "started_at": "2026-10-07T02:24:33.192918+00:00",
+  "budget_charge_usd": 2.71e-05,
+  "http_status": 200,
+  "request_id": "req_c3046ff8bcf0405687e4b39058098ebb",
+  "latency_ms": 273.61989999189973,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.34
+          },
+          {
+            "value": "B",
+            "probability": 0.17
+          },
+          {
+            "value": "C",
+            "probability": 0.15
+          },
+          {
+            "value": "D",
+            "probability": 0.34
+          }
+        ],
+        "confidence": 0.12
+      }
+    ],
+    "usage": {
+      "input_tokens": 271,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 271
+    }
+  },
+  "usage": {
+    "input_tokens": 271,
+    "output_tokens": 0,
+    "standardized_usd": 2.71e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": false,
+    "probabilities": {
+      "A": 0.34,
+      "B": 0.17,
+      "C": 0.15,
+      "D": 0.34
+    },
+    "raw_probabilities": {
+      "A": 0.34,
+      "B": 0.17,
+      "C": 0.15,
+      "D": 0.34
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.34,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.12,
+    "tied_at_maximum": true
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:33.468169+00:00"
+}

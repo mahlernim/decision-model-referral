@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00732",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "22e4591379005367ff765bf6bf3ef0e8eb2451d1b71fb8156b244ce98328bc52",
+  "started_at": "2026-10-07T02:24:21.587575+00:00",
+  "budget_charge_usd": 4.53e-05,
+  "http_status": 200,
+  "request_id": "req_c78899cb1c6342d49a33ca5faf96a9d5",
+  "latency_ms": 248.2503000064753,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.02
+          },
+          {
+            "value": "B",
+            "probability": 0.05
+          },
+          {
+            "value": "C",
+            "probability": 0.05
+          },
+          {
+            "value": "D",
+            "probability": 0.88
+          }
+        ],
+        "confidence": 0.84
+      }
+    ],
+    "usage": {
+      "input_tokens": 453,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 453
+    }
+  },
+  "usage": {
+    "input_tokens": 453,
+    "output_tokens": 0,
+    "standardized_usd": 4.53e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.02,
+      "B": 0.05,
+      "C": 0.05,
+      "D": 0.88
+    },
+    "raw_probabilities": {
+      "A": 0.02,
+      "B": 0.05,
+      "C": 0.05,
+      "D": 0.88
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.88,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.84,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:21.837610+00:00"
+}

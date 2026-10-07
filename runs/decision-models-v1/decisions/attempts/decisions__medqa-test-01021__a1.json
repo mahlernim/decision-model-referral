@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-01021",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "e1eb4325d0e7fbff6cb6812593435846f55031eb2427cf5aed90f063ed07d2f2",
+  "started_at": "2026-10-07T02:27:45.966807+00:00",
+  "budget_charge_usd": 3.39e-05,
+  "http_status": 200,
+  "request_id": "req_e993d966fa384b77abf8082986efa901",
+  "latency_ms": 437.8162999637425,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.05
+          },
+          {
+            "value": "B",
+            "probability": 0.13
+          },
+          {
+            "value": "C",
+            "probability": 0.05
+          },
+          {
+            "value": "D",
+            "probability": 0.77
+          }
+        ],
+        "confidence": 0.69
+      }
+    ],
+    "usage": {
+      "input_tokens": 339,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 339
+    }
+  },
+  "usage": {
+    "input_tokens": 339,
+    "output_tokens": 0,
+    "standardized_usd": 3.39e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.05,
+      "B": 0.13,
+      "C": 0.05,
+      "D": 0.77
+    },
+    "raw_probabilities": {
+      "A": 0.05,
+      "B": 0.13,
+      "C": 0.05,
+      "D": 0.77
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.77,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.69,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:46.406406+00:00"
+}

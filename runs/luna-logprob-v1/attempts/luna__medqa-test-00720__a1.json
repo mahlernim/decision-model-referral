@@ -1,0 +1,271 @@
+{
+  "job": "luna__medqa-test-00720",
+  "attempt": 1,
+  "manifest_hash": "9af977f5a58aa36d0bd08afe5d9dfe12d1135e2dff328f5eab31fe24d44984f9",
+  "request_hash": "7bf95eec3d5b5929997f37a1aa0af00aab7058e218f1bdbec2bc0a7eeec7d0cd",
+  "started_at": "2026-10-06T12:17:21.859437+00:00",
+  "budget_charge_usd": 2.8800000000000002e-05,
+  "http_status": 200,
+  "latency_ms": 2368.8240999472328,
+  "raw_response": {
+    "id": "resp_082d5ac15d97bf71016ac4e6d1a0f887d0a57580976df43e22",
+    "object": "response",
+    "created_at": 1791289041,
+    "status": "completed",
+    "access_programs": null,
+    "background": false,
+    "billing": {
+      "payer": "openai"
+    },
+    "completed_at": 1791289043,
+    "error": null,
+    "frequency_penalty": 0.0,
+    "incomplete_details": null,
+    "instructions": null,
+    "max_output_tokens": 128,
+    "max_tool_calls": null,
+    "model": "gpt-6-luna",
+    "moderation": null,
+    "output": [
+      {
+        "id": "msg_082d5ac15d97bf71016ac4e6d36acc87d0b42c833dc31363e5",
+        "type": "message",
+        "status": "completed",
+        "content": [
+          {
+            "type": "output_text",
+            "annotations": [],
+            "logprobs": [
+              {
+                "bytes": [
+                  123,
+                  34
+                ],
+                "logprob": 1.1e-05,
+                "token": "{\"",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      123,
+                      34
+                    ],
+                    "logprob": 1.1e-05,
+                    "token": "{\""
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  97,
+                  110,
+                  115,
+                  119,
+                  101,
+                  114
+                ],
+                "logprob": 0.0,
+                "token": "answer",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      97,
+                      110,
+                      115,
+                      119,
+                      101,
+                      114
+                    ],
+                    "logprob": 0.0,
+                    "token": "answer"
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  34,
+                  58,
+                  34
+                ],
+                "logprob": 8e-06,
+                "token": "\":\"",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      34,
+                      58,
+                      34
+                    ],
+                    "logprob": 8e-06,
+                    "token": "\":\""
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  66
+                ],
+                "logprob": -1.253536,
+                "token": "B",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      68
+                    ],
+                    "logprob": -0.697624,
+                    "token": "D"
+                  },
+                  {
+                    "bytes": [
+                      66
+                    ],
+                    "logprob": -1.253536,
+                    "token": "B"
+                  },
+                  {
+                    "bytes": [
+                      65
+                    ],
+                    "logprob": -1.947083,
+                    "token": "A"
+                  },
+                  {
+                    "bytes": [
+                      67
+                    ],
+                    "logprob": -2.602997,
+                    "token": "C"
+                  }
+                ]
+              },
+              {
+                "bytes": [
+                  34,
+                  125
+                ],
+                "logprob": 8e-06,
+                "token": "\"}",
+                "top_logprobs": [
+                  {
+                    "bytes": [
+                      34,
+                      125
+                    ],
+                    "logprob": 8e-06,
+                    "token": "\"}"
+                  }
+                ]
+              }
+            ],
+            "text": "{\"answer\":\"B\"}"
+          }
+        ],
+        "phase": "final_answer",
+        "role": "assistant"
+      }
+    ],
+    "parallel_tool_calls": true,
+    "presence_penalty": 0.0,
+    "previous_response_id": null,
+    "prompt_cache_key": null,
+    "prompt_cache_retention": "24h",
+    "reasoning": {
+      "context": "all_turns",
+      "effort": "none",
+      "mode": "standard",
+      "summary": null
+    },
+    "safety_identifier": null,
+    "service_tier": "default",
+    "store": false,
+    "temperature": 1.0,
+    "text": {
+      "format": {
+        "type": "json_schema",
+        "description": null,
+        "name": "comparator",
+        "schema": {
+          "type": "object",
+          "properties": {
+            "answer": {
+              "type": "string",
+              "enum": [
+                "A",
+                "B",
+                "C",
+                "D"
+              ]
+            }
+          },
+          "required": [
+            "answer"
+          ],
+          "additionalProperties": false
+        },
+        "strict": true
+      },
+      "verbosity": "medium"
+    },
+    "tool_choice": "auto",
+    "tool_usage": {
+      "image_gen": {
+        "input_tokens": 0,
+        "input_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "output_tokens": 0,
+        "output_tokens_details": {
+          "image_tokens": 0,
+          "text_tokens": 0
+        },
+        "total_tokens": 0
+      },
+      "web_search": {
+        "num_requests": 0
+      }
+    },
+    "tools": [],
+    "top_logprobs": 20,
+    "top_p": 0.98,
+    "truncation": "disabled",
+    "usage": {
+      "input_tokens": 223,
+      "input_tokens_details": {
+        "cache_write_tokens": 0,
+        "cached_tokens": 0
+      },
+      "output_tokens": 13,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 236
+    },
+    "user": null,
+    "metadata": {}
+  },
+  "usage": {
+    "input_tokens": 223,
+    "output_tokens": 13,
+    "cached_tokens": 0,
+    "billed_usd": 2.8800000000000002e-05,
+    "standardized_usd": 2.8800000000000002e-05
+  },
+  "resolved_model": "gpt-6-luna",
+  "value": {
+    "answer": "B",
+    "correct": true,
+    "probabilities": {
+      "A": 0.14268953359918082,
+      "B": 0.28549319010997126,
+      "C": 0.07405123187593055,
+      "D": 0.49776604441491734
+    },
+    "valid_letter_mass": 1.0000011026756346,
+    "selected_probability": 0.28549319010997126,
+    "argmax_matches": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-06T12:17:24.230034+00:00"
+}

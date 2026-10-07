@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00406",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "3163698ea40c971feb162fd776699913a28663e8add78b317d428739355c35fc",
+  "started_at": "2026-10-07T02:26:51.359414+00:00",
+  "budget_charge_usd": 2.75e-05,
+  "http_status": 200,
+  "request_id": "req_d6d9745bc03347489b0c86318974a544",
+  "latency_ms": 219.56429997226223,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.18
+          },
+          {
+            "value": "B",
+            "probability": 0.08
+          },
+          {
+            "value": "C",
+            "probability": 0.2
+          },
+          {
+            "value": "D",
+            "probability": 0.54
+          }
+        ],
+        "confidence": 0.39
+      }
+    ],
+    "usage": {
+      "input_tokens": 275,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 275
+    }
+  },
+  "usage": {
+    "input_tokens": 275,
+    "output_tokens": 0,
+    "standardized_usd": 2.75e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": false,
+    "probabilities": {
+      "A": 0.18,
+      "B": 0.08,
+      "C": 0.2,
+      "D": 0.54
+    },
+    "raw_probabilities": {
+      "A": 0.18,
+      "B": 0.08,
+      "C": 0.2,
+      "D": 0.54
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.54,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.39,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:26:51.580938+00:00"
+}

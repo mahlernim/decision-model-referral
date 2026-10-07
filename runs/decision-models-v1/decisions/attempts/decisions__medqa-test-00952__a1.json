@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00952",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "fc1334a7f9ad861acaaa36b7b3bf27abc908971f25cd96854669e7a611a79d9d",
+  "started_at": "2026-10-07T02:27:39.379873+00:00",
+  "budget_charge_usd": 2.71e-05,
+  "http_status": 200,
+  "request_id": "req_63595a31662349129984a97de0ebf3c7",
+  "latency_ms": 407.56010002223775,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "B",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.26
+          },
+          {
+            "value": "B",
+            "probability": 0.72
+          },
+          {
+            "value": "C",
+            "probability": 0.02
+          },
+          {
+            "value": "D",
+            "probability": 0.0
+          }
+        ],
+        "confidence": 0.63
+      }
+    ],
+    "usage": {
+      "input_tokens": 271,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 271
+    }
+  },
+  "usage": {
+    "input_tokens": 271,
+    "output_tokens": 0,
+    "standardized_usd": 2.71e-05
+  },
+  "value": {
+    "answer": "B",
+    "correct": false,
+    "probabilities": {
+      "A": 0.26,
+      "B": 0.72,
+      "C": 0.02,
+      "D": 0.0
+    },
+    "raw_probabilities": {
+      "A": 0.26,
+      "B": 0.72,
+      "C": 0.02,
+      "D": 0.0
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.72,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.63,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:27:39.789013+00:00"
+}

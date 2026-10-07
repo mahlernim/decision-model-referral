@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-test-00321",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "012477740b2ab98ce3ada469ba93133d074619b7bc24b73186e7498dc91bf49e",
+  "started_at": "2026-10-07T02:26:43.060763+00:00",
+  "budget_charge_usd": 3.41e-05,
+  "http_status": 200,
+  "request_id": "req_7b5fc5668d6944b4acf311419ceeb3f2",
+  "latency_ms": 387.23419996676967,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.85
+          },
+          {
+            "value": "B",
+            "probability": 0.09
+          },
+          {
+            "value": "C",
+            "probability": 0.02
+          },
+          {
+            "value": "D",
+            "probability": 0.04
+          }
+        ],
+        "confidence": 0.8
+      }
+    ],
+    "usage": {
+      "input_tokens": 341,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 341
+    }
+  },
+  "usage": {
+    "input_tokens": 341,
+    "output_tokens": 0,
+    "standardized_usd": 3.41e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.85,
+      "B": 0.09,
+      "C": 0.02,
+      "D": 0.04
+    },
+    "raw_probabilities": {
+      "A": 0.85,
+      "B": 0.09,
+      "C": 0.02,
+      "D": 0.04
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.85,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.8,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:26:43.449903+00:00"
+}

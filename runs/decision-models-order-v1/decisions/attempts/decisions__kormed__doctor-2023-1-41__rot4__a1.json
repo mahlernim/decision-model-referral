@@ -1,0 +1,107 @@
+{
+  "eval_id": "decisions__kormed__doctor-2023-1-41__rot4",
+  "item_id": "doctor-2023-1-41",
+  "cohort": "kormed",
+  "variant": "rot4",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "b4568de9b0cce56a9edcc5eeabdd2ccf4ca88daf227afe5618f29e3cc489e784",
+  "request_hash": "30a4c4182f1503e49c05721034a4695a5d8d1b19e08c4ef75361dfd2d45150d0",
+  "started_at": "2026-10-07T04:48:30.157279+00:00",
+  "budget_charge_usd": 3.64e-05,
+  "http_status": 200,
+  "latency_ms": 654.5575999771245,
+  "request_id": "req_18ff3567c9724738b62e70350bc07370",
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "A",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.88
+          },
+          {
+            "value": "B",
+            "probability": 0.01
+          },
+          {
+            "value": "C",
+            "probability": 0.02
+          },
+          {
+            "value": "D",
+            "probability": 0.07
+          },
+          {
+            "value": "E",
+            "probability": 0.02
+          }
+        ],
+        "confidence": 0.85
+      }
+    ],
+    "usage": {
+      "input_tokens": 364,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 364
+    }
+  },
+  "usage": {
+    "input_tokens": 364,
+    "output_tokens": 0,
+    "standardized_usd": 3.64e-05
+  },
+  "value": {
+    "answer": "A",
+    "correct": true,
+    "probabilities": {
+      "A": 0.88,
+      "B": 0.01,
+      "C": 0.02,
+      "D": 0.07,
+      "E": 0.02
+    },
+    "raw_probabilities": {
+      "A": 0.88,
+      "B": 0.01,
+      "C": 0.02,
+      "D": 0.07,
+      "E": 0.02
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.88,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "native_confidence": 0.85,
+    "tied_at_maximum": false,
+    "semantic_prediction": "E",
+    "semantic_probabilities": {
+      "E": 0.88,
+      "A": 0.01,
+      "B": 0.02,
+      "C": 0.07,
+      "D": 0.02
+    },
+    "referred": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T04:48:30.813927+00:00"
+}

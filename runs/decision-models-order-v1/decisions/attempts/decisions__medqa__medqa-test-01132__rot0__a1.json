@@ -1,0 +1,99 @@
+{
+  "eval_id": "decisions__medqa__medqa-test-01132__rot0",
+  "item_id": "medqa-test-01132",
+  "cohort": "medqa",
+  "variant": "rot0",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "b4568de9b0cce56a9edcc5eeabdd2ccf4ca88daf227afe5618f29e3cc489e784",
+  "request_hash": "388b4942e7f7de235a2d03c31fe6fa98fad3fe89ae5ecea94522cd3dd09161c5",
+  "started_at": "2026-10-07T04:48:00.069109+00:00",
+  "budget_charge_usd": 5.4900000000000006e-05,
+  "http_status": 200,
+  "latency_ms": 533.8310000370257,
+  "request_id": "req_f1a8094f054d4b2184b8b3bee1cebf85",
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "C",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.29
+          },
+          {
+            "value": "B",
+            "probability": 0.08
+          },
+          {
+            "value": "C",
+            "probability": 0.53
+          },
+          {
+            "value": "D",
+            "probability": 0.1
+          }
+        ],
+        "confidence": 0.37
+      }
+    ],
+    "usage": {
+      "input_tokens": 549,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 549
+    }
+  },
+  "usage": {
+    "input_tokens": 549,
+    "output_tokens": 0,
+    "standardized_usd": 5.4900000000000006e-05
+  },
+  "value": {
+    "answer": "C",
+    "correct": false,
+    "probabilities": {
+      "A": 0.29,
+      "B": 0.08,
+      "C": 0.53,
+      "D": 0.1
+    },
+    "raw_probabilities": {
+      "A": 0.29,
+      "B": 0.08,
+      "C": 0.53,
+      "D": 0.1
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.53,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.37,
+    "tied_at_maximum": false,
+    "semantic_prediction": "C",
+    "semantic_probabilities": {
+      "A": 0.29,
+      "B": 0.08,
+      "C": 0.53,
+      "D": 0.1
+    },
+    "referred": true
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T04:48:00.605152+00:00"
+}

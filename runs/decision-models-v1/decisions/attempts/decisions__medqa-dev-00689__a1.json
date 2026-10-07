@@ -1,0 +1,88 @@
+{
+  "job": "decisions__medqa-dev-00689",
+  "model": "decisions",
+  "attempt": 1,
+  "manifest_hash": "80423bf2a89fb59c4ad221c81c30bab2eedace695906a7e6486fdcbb395cf196",
+  "request_hash": "8d44fb5e4d9a47bccedf05be8c9c6b01b0f5f41224d6428aef2a43bbcec7a0a7",
+  "started_at": "2026-10-07T02:24:17.983520+00:00",
+  "budget_charge_usd": 2.76e-05,
+  "http_status": 200,
+  "request_id": "req_e7490697db2c4d33a896a84ac49898c1",
+  "latency_ms": 254.51820000307634,
+  "raw_response": {
+    "model": "gpt-6-luna",
+    "answers": [
+      {
+        "type": "choice",
+        "name": "answer",
+        "choice": "D",
+        "probabilities": [
+          {
+            "value": "A",
+            "probability": 0.01
+          },
+          {
+            "value": "B",
+            "probability": 0.01
+          },
+          {
+            "value": "C",
+            "probability": 0.03
+          },
+          {
+            "value": "D",
+            "probability": 0.95
+          }
+        ],
+        "confidence": 0.93
+      }
+    ],
+    "usage": {
+      "input_tokens": 276,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 276
+    }
+  },
+  "usage": {
+    "input_tokens": 276,
+    "output_tokens": 0,
+    "standardized_usd": 2.76e-05
+  },
+  "value": {
+    "answer": "D",
+    "correct": true,
+    "probabilities": {
+      "A": 0.01,
+      "B": 0.01,
+      "C": 0.03,
+      "D": 0.95
+    },
+    "raw_probabilities": {
+      "A": 0.01,
+      "B": 0.01,
+      "C": 0.03,
+      "D": 0.95
+    },
+    "probability_sum": 1.0,
+    "selected_probability": 0.95,
+    "returned_order": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "native_confidence": 0.93,
+    "tied_at_maximum": false
+  },
+  "failure": null,
+  "status": "success",
+  "terminal": true,
+  "finished_at": "2026-10-07T02:24:18.239885+00:00"
+}
